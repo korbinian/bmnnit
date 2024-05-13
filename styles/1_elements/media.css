@@ -1,0 +1,23 @@
+/*  DEFAULTS: MEDIA
+//////////////////////////////////////////////////////////////////////////////*/
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    vertical-align: bottom;
+    height: auto;
+}
+figure {
+    margin: 0;
+    max-width: 100%;
+}
+
+.wp-block-image figcaption {
+    text-align: left;
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-m);
+}

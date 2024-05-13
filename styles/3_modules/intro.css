@@ -1,0 +1,27 @@
+/*  MODULE: INTRO
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--intro {
+    margin-bottom: var(--xl);
+}
+
+.intro {
+    font-size: var(--font-size-xxl);
+    line-height: 1.4;
+    stext-align: center;
+}
+
+.intro b {
+    font-family: var(--font-stack-plex-mono);
+    font-weight: 700;
+    background-color: #000;
+    padding-inline: 0.75rem;
+    margin-left: -0.75rem;
+    border-radius: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.typed-cursor {
+    font-family: var(--font-stack-plex-mono);
+    font-weight: 700;
+}

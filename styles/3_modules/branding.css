@@ -1,0 +1,49 @@
+/*  MODULE: BRANDING
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--branding {
+}
+
+.branding {
+}
+
+.branding__logo {
+}
+.branding__logo img {
+}
+
+.branding__title {
+    font-size: var(--font-size-l);
+
+    line-height: 3rem;
+}
+.branding__title a {
+    text-decoration: none;
+}
+.branding__title b {
+    font-family: var(--font-stack-plex-sans);
+    font-weight: 600;
+}
+
+.branding__title span {
+    animation-duration: 0.3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-family: var(--font-stack-plex-sans);
+    font-weight: 600;
+}
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.branding__tagline {
+    font-size: var(--font-size-s);
+    line-height: 1.5rem;
+}

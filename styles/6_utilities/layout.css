@@ -1,0 +1,251 @@
+/*  UTILITIES: LAYOUT
+//////////////////////////////////////////////////////////////////////////////*/
+
+[hidden],
+.display-none,
+.hide {
+    display: none;
+}
+.display-inline {
+    display: inline;
+}
+.display-inline-block {
+    display: inline-block;
+}
+.display-block {
+    display: flex;
+}
+.display-table {
+    display: table;
+}
+.display-grid {
+    display: grid;
+}
+.display-flex {
+    display: flex;
+}
+.visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-end {
+    justify-content: end;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.align-items-start {
+    align-items: start;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-end {
+    align-items: end;
+}
+
+.grid-template-columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-template-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-template-columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-template-columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+.grid-template-columns-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid-template-columns-7 {
+    grid-template-columns: repeat(7, 1fr);
+}
+.grid-template-columns-8 {
+    grid-template-columns: repeat(8, 1fr);
+}
+.grid-template-columns-9 {
+    grid-template-columns: repeat(8, 1fr);
+}
+.grid-template-columns-10 {
+    grid-template-columns: repeat(10, 1fr);
+}
+.grid-template-columns-11 {
+    grid-template-columns: repeat(11, 1fr);
+}
+.grid-template-columns-12 {
+    grid-template-columns: repeat(12, 1fr);
+}
+.grid-template-columns-13 {
+    grid-template-columns: repeat(13, 1fr);
+}
+.grid-template-columns-14 {
+    grid-template-columns: repeat(14, 1fr);
+}
+.grid-template-columns-15 {
+    grid-template-columns: repeat(15, 1fr);
+}
+.grid-template-columns-16 {
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.grid-template-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+}
+.grid-template-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+}
+.grid-template-rows-4 {
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.place-items-top-left {
+    place-items: start start;
+}
+.place-items-top {
+    place-items: start center;
+}
+.place-items-top-right {
+    place-items: start end;
+}
+.place-items-right {
+    place-items: center end;
+}
+.place-items-bottom-right {
+    place-items: end end;
+}
+.place-items-bottom {
+    place-items: end center;
+}
+.place-items-bottom-left {
+    place-items: end start;
+}
+.place-items-left {
+    place-items: center start;
+}
+.place-items-center {
+    place-items: center;
+}
+
+.place-self-center {
+    place-self: center;
+}
+.place-self-top-left {
+    place-self: start start;
+}
+.place-self-top {
+    place-self: start center;
+}
+.place-self-top-right {
+    place-self: start end;
+}
+.place-self-right {
+    place-self: center end;
+}
+.place-self-bottom-right {
+    place-self: end end;
+}
+.place-self-bottom {
+    place-self: end center;
+}
+.place-self-bottom-left {
+    place-self: end start;
+}
+.place-self-left {
+    place-self: center start;
+}
+
+.gap-xs {
+    gap: var(--xs);
+}
+.gap-s {
+    gap: var(--s);
+}
+.gap-m {
+    gap: var(--m);
+}
+.gap-l {
+    gap: var(--l);
+}
+.gap-xl {
+    gap: var(--xl);
+}
+
+.column-gap-xs {
+    column-gap: var(--xs);
+}
+.column-gap-s {
+    column-gap: var(--s);
+}
+.column-gap-m {
+    column-gap: var(--m);
+}
+.column-gap-l {
+    column-gap: var(--l);
+}
+.column-gap-xl {
+    column-gap: var(--xl);
+}
+
+.row-gap-xs {
+    row-gap: var(--xs);
+}
+.row-gap-s {
+    row-gap: var(--s);
+}
+.row-gap-m {
+    row-gap: var(--m);
+}
+.row-gap-l {
+    row-gap: var(--l);
+}
+.row-gap-xl {
+    row-gap: var(--xl);
+}
+
+.width-fit-content {
+    width: fit-content;
+}
+.fullwidth {
+    width: 100%;
+}
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.offset-top-l {
+    margin-top: calc(var(--l) * -1);
+}
+.offset-top-xl {
+    margin-top: calc(var(--xl) * -1);
+}
+
+.desktop-only {
+    display: none;
+}
+@media (min-width: 640px) {
+    .desktop-only {
+        display: block;
+    }
+}

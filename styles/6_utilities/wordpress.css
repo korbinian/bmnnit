@@ -1,0 +1,111 @@
+/*  UTILITIES: WORDPRESS
+//////////////////////////////////////////////////////////////////////////////*/
+
+.entry-content img {
+    margin: 0 0 var(--m) 0;
+}
+.alignleft,
+img.alignleft {
+    margin-right: 0;
+    display: inline;
+    float: left;
+}
+.alignright,
+img.alignright {
+    margin-left: 0;
+    display: inline;
+    float: right;
+}
+figure.alignright {
+    display: flex !important;
+    justify-content: end;
+    width: 100%;
+}
+.aligncenter,
+img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+}
+.alignnone,
+img.alignnone {
+    /* not sure about this one */
+}
+.wp-caption {
+}
+.wp-caption img {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+}
+.wp-caption p.wp-caption-text {
+    line-height: var(--line-height-s);
+    font-size: var(--font-size-s);
+    margin: 0;
+}
+.wp-smiley {
+    margin: 0 !important;
+    max-height: 1em;
+}
+blockquote.left {
+    margin-right: var(--m);
+    text-align: right;
+    margin-left: 0;
+    width: 33%;
+    float: left;
+}
+blockquote.right {
+    margin-left: var(--m);
+    text-align: left;
+    margin-right: 0;
+    width: 33%;
+    float: right;
+}
+
+:where(body .is-layout-flex) {
+    gap: var(--m);
+}
+
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    margin-left: inherit !important;
+}
+
+.sticky {
+}
+.gallery-caption {
+}
+.bypostauthor {
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}

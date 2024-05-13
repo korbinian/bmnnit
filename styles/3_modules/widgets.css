@@ -1,0 +1,12 @@
+/*  MODULE: WIDGETS
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--widgets {
+    font-family: var(--font-stack-plex-sans-condensed);
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-s);
+}
+
+.widgets {
+    margin: 0; padding: 0;
+}

@@ -1,0 +1,36 @@
+/*  BLOCK: BUTTONS
+//////////////////////////////////////////////////////////////////////////////*/
+
+.button,
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+}
+button:hover,
+.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+}
+button:active,
+.button:active,
+input[type="submit"]:active,
+input[type="button"]:active {
+}
+
+.wp-block-button__link {
+    text-decoration: none;
+}
+
+.wp-block-button {
+}
+.wp-block-button:hover {
+}
+
+.wp-element-button,
+.wp-block-button__link {
+}
+
+.wp-element-button:hover,
+.wp-block-button__link:hover {
+}

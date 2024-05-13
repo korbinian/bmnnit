@@ -1,0 +1,19 @@
+/*  UTILITIES: COLORS
+//////////////////////////////////////////////////////////////////////////////*/
+
+.has-dark-color {
+    color: var(--color-dark);
+}
+
+.white,
+.has-white-color {
+    color: var(--color-white);
+}
+
+.has-white-background-color {
+    background-color: var(--color-white);
+}
+
+.mix-blend {
+    mix-blend-mode: multiply;
+}

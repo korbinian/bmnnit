@@ -1,0 +1,28 @@
+/*  DEFAULTS: LISTS
+//////////////////////////////////////////////////////////////////////////////*/
+
+ul {
+    list-style: disc;
+}
+
+ol,
+ul {
+    padding-left: 1rem;
+}
+
+ul ul {
+    padding-left: 0;
+    list-style: circle;
+}
+
+dl {
+}
+
+dl dt {
+    font-weight: var(--font-weight-bold);
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,6 @@
+/*  BLOCK: GALLERY MOBILE
+//////////////////////////////////////////////////////////////////////////////*/
+
+.wp-block-gallery .wp-block-image {
+    width: 100% !important;
+}

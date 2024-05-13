@@ -1,0 +1,109 @@
+/*  SETUP: VARIABLES
+//////////////////////////////////////////////////////////////////////////////*/
+
+:root {
+    /* FONT STACKS ///////////////////////////////////////////////////////////*/
+
+    --font-stack-inter: "Inter", sans-serif;
+    --font-stack-satoshi: "Satoshi", sans-serif;
+    --font-stack-space-grotesk: "Space Grotesk", sans-serif;
+    --font-stack-pilcrow-rounded: "Pilcrow Rounded", sans-serif;
+    --font-stack-plex-sans: "Plex Sans", sans-serif;
+    --font-stack-plex-sans-condensed: "Plex Sans Condensed", sans-serif;
+    --font-stack-plex-mono: "Plex Mono", sans-serif;
+
+    --font-family-copy: var(--font-stack-plex-sans);
+    --font-family-display: var(--font-stack-plex-sans-condensed);
+
+    /* FONT SIZES ////////////////////////////////////////////////////////////*/
+
+    --font-size-xs: 0.7rem; /*14px*/
+    --font-size-s: 0.8rem; /*16px*/
+    --font-size-m: 1rem; /*20px*/
+    --font-size-l: 1.2rem; /*24px*/
+    --font-size-xl: 1.6rem; /*32px*/
+    --font-size-xxl: 2rem; /*40px*/
+    --font-size-xxxl: 3rem; /*64px*/
+
+    /* LINE HEIGHT ///////////////////////////////////////////////////////////*/
+
+    --line-height-xs: calc(21 / 14);
+    --line-height-s: calc(24 / 16);
+    --line-height-m: calc(30 / 20);
+    --line-height-l: calc(32 / 24);
+    --line-height-xl: calc(42 / 32);
+    --line-height-xxl: calc(48 / 40);
+    --line-height-xxxl: calc(66 / 60);
+
+    --line-height-copy: var(--line-height-m);
+
+    /* FONT WEIGHTS //////////////////////////////////////////////////////////*/
+
+    --font-weight-thin: 100;
+    --font-weight-extra-light: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-heavy: 800;
+    --font-weight-black: 900;
+
+    --font-weight-copy: 400;
+    --font-weight-buttons: 700;
+    --font-weight-headings: 400;
+
+    /* COLORS ////////////////////////////////////////////////////////////////*/
+
+    --color-blue-dark: rgba(32, 53, 94, 1);
+    --color-red: rgba(231, 36, 36, 1);
+    --color-red-darker: rgba(190, 6, 6, 1);
+    --color-green: green;
+    --color-black: black;
+    --color-dark: rgba(28, 39, 41, 1);
+    --color-light: grey;
+    --color-white: white;
+
+    --color-text: var(--color-white);
+    --color-text-hover: var(--color-white);
+
+    --color-highlight: var(--color-blue);
+
+    /* BORDERS ///////////////////////////////////////////////////////////////*/
+
+    --border-width: 1px;
+    --border-radius: 0.5rem;
+    --border-style: solid;
+    --border-color: var(--color-black);
+    --border: var(--border-width) var(--border-style) var(--border-color);
+
+    /* BOX SHADOWS ///////////////////////////////////////////////////////////*/
+
+    --box-shadow: 0.25rem 0.25rem var(--color-light);
+
+    /* SPACING ///////////////////////////////////////////////////////////////*/
+
+    --xs: 0.25rem;
+    --s: 0.5rem;
+    --m: 1rem;
+    --l: 2rem;
+    --xl: 4rem;
+
+    --h1: var(--xl);
+    --h2: var(--l);
+    --h3: var(--m);
+    --h4: 0;
+    --h5: 0;
+    --h6: 0;
+
+    --col: 4rem;
+
+    --padding: var(--m);
+    --gap: var(--m);
+
+    --size-button: 2.5rem;
+
+    /* ICONS /////////////////////////////////////////////////////////////////*/
+
+    --icon-stroke-width: 2;
+}

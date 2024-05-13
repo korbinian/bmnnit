@@ -1,0 +1,25 @@
+/*  DEFAULTS: TABLES
+//////////////////////////////////////////////////////////////////////////////*/
+
+table {
+    margin: 0;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0;
+    vertical-align: top;
+}
+th {
+    text-align: left;
+    font-weight: inherit;
+
+    padding-right: var(--s);
+}
+
+.article th,
+.article td {
+    border: none !important;
+    outline: 1px solid;
+}
