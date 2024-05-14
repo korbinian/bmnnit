@@ -7,19 +7,12 @@
 .nav-main {
     display: grid;
     place-items: center stretch;
-
-    spadding: var(--s);
     height: 3rem;
-    wsidth: fit-content;
 }
 
 .nav-main:has(a:hover) {
-    sbackground: rgba(255, 255, 255, 0.05);
-    stransition: background-color 0.3s;
 }
 .nav-main:has(a:hover) .current-menu-item a {
-    sbackground-color: rgba(255, 255, 255, 0.025);
-    stransition: background-color 0.3s;
 }
 
 .nav-main .menu {
@@ -83,7 +76,6 @@
 }
 
 .nav-main .menu .search {
-    smargin-left: auto;
     flex-basis: 100%;
     flex-shrink: 1;
     font-size: 0;
