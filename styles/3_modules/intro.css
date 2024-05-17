@@ -8,12 +8,13 @@
 .intro {
     font-size: var(--font-size-xxl);
     line-height: 1.4;
-    stext-align: center;
+    color: var(--color-white);
+    text-align: center;
 }
 
 .intro b {
     font-family: var(--font-stack-plex-mono);
-    font-weight: 700;
+    font-weight: 500;
     background-color: #000;
     padding-inline: 0.75rem;
     margin-left: -0.75rem;
@@ -22,6 +23,7 @@
 }
 
 .typed-cursor {
+    display: none;
     font-family: var(--font-stack-plex-mono);
     font-weight: 700;
 }

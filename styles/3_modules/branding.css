@@ -14,8 +14,7 @@
 
 .branding__title {
     font-size: var(--font-size-l);
-
-    line-height: 3rem;
+    line-height: 2rem;
 }
 .branding__title a {
     text-decoration: none;

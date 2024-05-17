@@ -4,25 +4,26 @@
 body {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
-    min-height: 100dvh;
 }
 
 .section {
     display: grid;
     grid-template-columns: 1fr repeat(15, 4rem) 1fr;
     column-gap: var(--m);
+    position: relative;
 }
 
 /*  HEADER ///////////////////////////////////////////////////////////////////*/
 
 .section--header {
     grid-template-rows: repeat(6, 1.5rem);
+    z-index: 3;
     .module--branding {
         grid-column: 3 / 6;
         grid-row: 3/ 5;
     }
     .module--nav-main {
-        grid-column: 7 / -3;
+        grid-column: 5 / -5;
         grid-row: 3/ 5;
         margin-left: -1rem;
     }
@@ -32,59 +33,36 @@ body {
 
 .section--main {
     position: relative;
-    > * {
-        color: #000;
-    }
-    &::before {
-        content: "";
-        background: #fff;
-        position: absolute;
-        top: 0;
-        right: 1rem;
-        bottom: 0;
-        left: 1rem;
-        z-index: -1;
-        border-radius: 0.5rem;
-    }
+    min-height: calc(100vh - 9rem);
+    margin-bottom: 9rem;
+    z-index: 2;
 
-    .module--sidebar {
-        grid-row: 1;
-        grid-column: 3/6;
-        padding-top: 0.25rem;
-    }
-    .hentry {
-        grid-column: 6/-3;
+    .area--content {
+        grid-column: 5/-5;
         grid-row: 1;
         display: grid;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        sbackground: #fff;
-        border-radius: 0.5rem;
-        scolor: #000;
-        padding-top: 3.5rem;
-        padding-bottom: 3.5rem;
         grid-template-rows: min-content;
+        padding-block: 3.5rem;
     }
-}
-.home .section--main {
-    > * {
-        color: #fff;
-    }
-}
-
-.home .section--main .hentry {
-    grid-column: 6 /-2;
-    padding-top: 0;
-}
-.home .section--main::before {
-    background-color: transparent;
 }
 
 /*  FOOTER ///////////////////////////////////////////////////////////////////*/
 
 .section--footer {
+    position: fixed;
+    height: 9rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     padding-block: var(--l);
+    display: grid;
+    > .module--meta {
+        grid-column: 4 / -4;
+        grid-row: 2;
+    }
     > .module--widgets {
-        grid-column: 2 /-2;
+        grid-column: 4 /-4;
+        grid-row: 1;
     }
 }

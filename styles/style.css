@@ -24,9 +24,11 @@
 @import "1_elements/forms.css";
 @import "1_elements/tables.css";
 
-/*/ /////////////////////////////////////////////////////////////////////////////
+/*/ ////////////////////////////////////////////////////////////////////////////
 //	BLOCKS
 //////////////////////////////////////////////////////////////////////////////*/
+
+@import "2_blocks/details.css";
 
 /*//////////////////////////////////////////////////////////////////////////////
 //	MODULES
@@ -39,6 +41,8 @@
 @import "3_modules/article.css";
 @import "3_modules/intro.css";
 @import "3_modules/searchbar.css";
+@import "3_modules/services.css";
+@import "3_modules/meta.css";
 
 /*/ /////////////////////////////////////////////////////////////////////////////
 //	LAYOUT
@@ -88,20 +92,7 @@ html {
     }
 }
 
-.services > * {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.services summary {
-    padding: 0.25rem 1rem;
-    background: #fff;
-    color: #000;
-    border-radius: 0.5rem;
-    width: fit-content;
-}
-
-.services details[open] summary {
-    margin-bottom: 1rem;
+.section--footer {
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-s);
 }

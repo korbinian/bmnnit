@@ -2,4 +2,26 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .wp-block-details {
+    & summary {
+        display: flex;
+        gap: var(--s);
+        user-select: none;
+        font-weight: 500;
+        color: var(--color-black);
+        &::before {
+            display: block;
+            content: "→";
+            font-family: var(--font-stack-inter);
+            font-weight: 600;
+            color: var(--color-dark);
+            transform: translateX(0);
+            transition: transform 0.3s;
+        }
+    }
+    &[open] summary::before {
+        transform: rotate(90deg);
+    }
+    &[open] {
+        flex-basis: 100%;
+    }
 }

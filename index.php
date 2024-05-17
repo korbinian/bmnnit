@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<main class="section section--main" id="primary" >
-
+		<div class="area area--content">
 		<?php
 		if ( have_posts() ) :
 
@@ -29,7 +29,7 @@
 
 		endif;
 		?>
-	<?php get_sidebar(); ?>
+		</div>
 	</main>
 
 <?php get_footer(); ?>

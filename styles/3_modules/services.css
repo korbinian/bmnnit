@@ -1,0 +1,45 @@
+/*  MODULE: SERVICES
+//////////////////////////////////////////////////////////////////////////////*/
+
+.services {
+    margin-bottom: var(--xl);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--color-transparent-dark);
+}
+
+.services > * {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+.services details[open] {
+    padding-bottom: 1rem;
+}
+.services summary {
+    padding: 0.25rem 1rem;
+    background-color: var(--color-transparent-light);
+    color: var(--color-white);
+
+    &:hover {
+    }
+    &::before {
+        order: 2;
+        margin-left: auto;
+    }
+    &:hover::before {
+        transform: rotate(45deg);
+        transition: transform 0.3s;
+        color: #fff;
+    }
+
+    + * {
+        padding-inline: 1rem;
+        font-size: var(--font-size-s);
+        line-height: var(--line-height-s);
+    }
+}
+
+.services details[open] summary {
+    margin-bottom: 1rem;
+}

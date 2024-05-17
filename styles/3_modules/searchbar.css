@@ -11,6 +11,7 @@
 }
 
 .wp-block-search__label {
+    display: none;
 }
 
 .wp-block-search__inside-wrapper {
