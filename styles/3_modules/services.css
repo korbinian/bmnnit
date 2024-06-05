@@ -5,7 +5,6 @@
     margin-bottom: var(--xl);
     border-radius: var(--border-radius);
     overflow: hidden;
-    background-color: var(--color-transparent-dark);
 }
 
 .services > * {
@@ -18,19 +17,19 @@
 }
 .services summary {
     padding: 0.25rem 1rem;
-    background-color: var(--color-transparent-light);
-    color: var(--color-white);
+    background-color: color-mix(in oklab, var(--color-neutral), white 80%);
+    color: var(--color-text-dark);
 
     &:hover {
     }
     &::before {
         order: 2;
         margin-left: auto;
+        color: var(--color-highlight-light);
     }
     &:hover::before {
-        transform: rotate(45deg);
+        transform: rotate(90deg);
         transition: transform 0.3s;
-        color: #fff;
     }
 
     + * {

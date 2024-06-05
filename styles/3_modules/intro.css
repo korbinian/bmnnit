@@ -8,18 +8,20 @@
 .intro {
     font-size: var(--font-size-xxl);
     line-height: 1.4;
-    color: var(--color-white);
-    text-align: center;
+    font-weight: 500;
+    color: var(--color-secondary-darker);
 }
 
 .intro b {
     font-family: var(--font-stack-plex-mono);
-    font-weight: 500;
-    background-color: #000;
+
+    background-color: var(--color-secondary-dark);
+    color: var(--color-secondary-light);
     padding-inline: 0.75rem;
-    margin-left: -0.75rem;
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius);
     margin-right: 0.25rem;
+
+    line-height: 2;
 }
 
 .typed-cursor {

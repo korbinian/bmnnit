@@ -1,0 +1,38 @@
+/*  THEME: GREEN
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--green.current-menu-item),
+body:has(.theme--green:hover) {
+    --color-neutral: var(--color-grey-200);
+    --color-neutral-lighter: var(--color-grey-100);
+    --color-neutral-light: var(--color-grey-50);
+    --color-neutral-dark: var(--color-grey-900);
+
+    --color-primary: var(--color-green-500);
+    --color-primary-lighter: var(--color-green-400);
+    --color-primary-light: var(--color-green-50);
+    --color-primary-darker: var(--color-green-600);
+    --color-primary-dark: var(--color-green-900);
+
+    --color-secondary: var(--color-orange-500);
+    --color-secondary-lighter: var(--color-orange-400);
+    --color-secondary-light: var(--color-orange-50);
+    --color-secondary-darker: var(--color-orange-600);
+    --color-secondary-dark: var(--color-orange-900);
+
+    --color-text-light: var(--color-neutral-light);
+    --color-text-dark: var(--color-neutral-dark);
+    --color-text-on-primary: var(--color-primary-light);
+    --color-text-on-secondary: var(--color-secondary-light);
+
+    --color-transparent-light: color-mix(
+        in oklab,
+        var(--color-secondary),
+        transparent 60%
+    );
+    --color-transparent-dark: color-mix(
+        in oklab,
+        var(--color-secondary-dark),
+        transparent 20%
+    );
+}

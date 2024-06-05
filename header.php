@@ -30,6 +30,11 @@
 				?>
 			</nav>
 		</div>
+		<div class="module module--widgets-topbar">
+			<div class="widgets-topbar">
+				<?php dynamic_sidebar( 'widgets-topbar' ); ?>
+			</div>
+		</div>
 	</header>
 
 

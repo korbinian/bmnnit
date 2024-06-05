@@ -9,11 +9,12 @@
 .nav-main {
     display: grid;
     place-items: center stretch;
-    height: 2rem;
+    height: 4rem;
+    margin-left: -1rem;
     & .menu {
         display: flex;
-        justify-content: center;
-        gap: var(--s);
+        justify-content: start;
+        gap: 0;
         width: 100%;
         & > .menu-item {
             flex-shrink: 0;
@@ -22,48 +23,64 @@
                 display: grid;
                 place-items: center;
                 padding-inline: var(--m);
-                height: 2rem;
+                height: 4rem;
                 text-decoration: none;
-                border-radius: var(--border-radius);
+                color: var(--color-secondary-dark);
             }
             &:hover > a {
-                background-color: var(--color-transparent-light);
+                color: var(--color-text-on-primary);
+                background-color: var(--color-primary);
             }
         }
         & .current-menu-item,
         & .current-menu-ancestor {
             & > a {
-                background-color: var(--color-transparent-light);
+                scolor: var(--color-secondary-dark);
             }
         }
-        & .menu-item-has-children:has(*:hover) > a {
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: -0.5rem;
-                left: 0;
-                right: 0;
-                height: 0.5rem;
-                background-color: transparent;
-            }
+
+        & .menu-item-has-children > a {
+            display: flex;
+            align-items: center;
+            gap: var(--s);
+        }
+        & .menu-item-has-children > a::after {
+            content: "↓";
+            font-family: var(--font-stack-inter);
+            color: var(--color-white);
+            transform: translateX(0);
+            transition: transform 0.3s;
+            transform: rotate(-45deg);
         }
     }
     & .sub-menu {
         position: absolute;
-        top: 2.5rem;
+
+        top: 4rem;
+        left: -100vw;
+        padding-left: 100vw;
+        width: 200vw;
+
         display: none;
-        border-radius: var(--border-radius);
-        z-index: 1;
-        padding-block: var(--s);
-        background-color: var(--color-transparent-light);
-        backdrop-filter: blur(30px);
+        z-index: 1000;
+
+        color: var(--color-text-on-primary);
+        background: var(--color-primary);
+
         & .menu-item {
             & a {
                 text-decoration: none;
                 display: block;
-                padding-inline: var(--m);
+                padding: 1rem 1rem;
+
                 &:hover {
-                    background-color: var(--color-transparent-dark);
+                    text-decoration: underline;
+                    &::after {
+                        color: var(--color-text-dark);
+                        color: var(--color-secondary-dark);
+                        transform: translateX(0.15rem);
+                        transition: transform 0.3s;
+                    }
                 }
             }
         }
@@ -74,26 +91,33 @@
         }
     }
     & .menu-item:hover .sub-menu {
-        display: block;
+        display: flex;
     }
 }
-
+.nav-main .menu .cta {
+    margin-left: auto;
+}
 .nav-main .menu .cta a {
-    background: linear-gradient(
-        to bottom,
-        var(--color-highlight-light),
-        var(--color-highlight)
-    );
-    color: var(--color-highlight-text);
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: var(--color-text-on-primary);
     display: flex;
     gap: var(--s);
+    height: 2rem;
+    margin: 1rem;
     align-items: center;
     padding-inline: var(--m);
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: var(--color-primary-darker);
+        transition: background-color 0.3s;
+    }
     &::after {
         display: block;
         content: "→";
         font-family: var(--font-stack-inter);
-        color: var(--color-dark);
+        color: var(--color-primary-dark);
         transform: translateX(0);
         transition: transform 0.3s;
     }

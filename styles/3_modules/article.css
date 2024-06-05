@@ -3,11 +3,37 @@
 
 .hentry {
     display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    height: 100%;
     gap: 1rem;
+    & .entry-header,
+    & .entry-content,
+    & .entry-footer {
+        gap: var(--m);
+        > * {
+            grid-column: 5 /-5;
+        }
+        > .alignwide {
+            grid-column: 2 /-2;
+        }
+        > .alignfull {
+            grid-column: 1 /-1;
+        }
+        > .alignleft {
+            grid-column: 3 / -5;
+        }
+    }
 }
+
 .entry-title {
     font-size: var(--font-size-xxl);
     line-height: var(--line-height-xxl);
+    font-weight: 300;
+    position: relative;
+    width: fit-content;
+}
+
+.entry-content {
 }
 
 .entry-footer {

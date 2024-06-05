@@ -1,8 +1,8 @@
 /*  UTILITIES: WORDPRESS
 //////////////////////////////////////////////////////////////////////////////*/
 
-.entry-content img {
-    margin: 0 0 var(--m) 0;
+.entry-content * {
+    margin: 0 0 0 0;
 }
 .alignleft,
 img.alignleft {
@@ -67,7 +67,9 @@ blockquote.right {
     gap: var(--m);
 }
 
-body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+body
+    .is-layout-constrained
+    > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
     margin-left: inherit !important;
 }
 

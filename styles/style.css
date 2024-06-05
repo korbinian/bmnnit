@@ -29,12 +29,14 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 @import "2_blocks/details.css";
+@import "2_blocks/image.css";
 
 /*//////////////////////////////////////////////////////////////////////////////
 //	MODULES
 //////////////////////////////////////////////////////////////////////////////*/
 
 @import "3_modules/branding.css";
+@import "3_modules/nav-left.css";
 @import "3_modules/nav-main.css";
 @import "3_modules/sidebar.css";
 @import "3_modules/widgets.css";
@@ -58,6 +60,18 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 @import "5_themes/default.css";
+@import "5_themes/red.css";
+@import "5_themes/orange.css";
+@import "5_themes/yellow.css";
+@import "5_themes/lime.css";
+@import "5_themes/green.css";
+@import "5_themes/cyan.css";
+@import "5_themes/teal.css";
+@import "5_themes/blue.css";
+@import "5_themes/indigo.css";
+@import "5_themes/purple.css";
+@import "5_themes/pink.css";
+@import "5_themes/grey.css";
 
 /*//////////////////////////////////////////////////////////////////////////////
 //	UTILITIES
@@ -81,7 +95,7 @@
 //	OVERWRITES
 //////////////////////////////////////////////////////////////////////////////*/
 
-html {
+/* html {
     margin-top: 0 !important;
 }
 
@@ -90,6 +104,10 @@ html {
     &:hover {
         opacity: 1;
     }
+} */
+
+.logged-in .section--header {
+    top: 32px;
 }
 
 .section--footer {

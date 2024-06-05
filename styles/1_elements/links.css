@@ -5,8 +5,7 @@ a {
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
-
-    color: var(--color-text);
+    color: inherit;
 }
 
 a:link {
@@ -17,4 +16,3 @@ a:hover {
 }
 a:active {
 }
-
