@@ -47,8 +47,12 @@ body {
     backdrop-filter: blur(15px);
 }
 
-.module--branding {
+.section--header .module--widgets-topbar {
     background: var(--color-transparent-dark);
+}
+
+.module--branding {
+    /* background: var(--color-transparent-dark); */
 }
 
 .section--main {
@@ -74,5 +78,6 @@ body {
             var(--color-transparent-dark),
             transparent
         );
+        pointer-events: none;
     }
 }

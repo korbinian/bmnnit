@@ -36,10 +36,14 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 @import "3_modules/branding.css";
-@import "3_modules/nav-left.css";
 @import "3_modules/nav-main.css";
+@import "3_modules/nav-sidebar.css";
+@import "3_modules/nav-footer.css";
 @import "3_modules/sidebar.css";
 @import "3_modules/widgets.css";
+@import "3_modules/widgets-topbar.css";
+@import "3_modules/widgets-topright.css";
+@import "3_modules/widgets-footer.css";
 @import "3_modules/article.css";
 @import "3_modules/intro.css";
 @import "3_modules/searchbar.css";
@@ -95,22 +99,66 @@
 //	OVERWRITES
 //////////////////////////////////////////////////////////////////////////////*/
 
-/* html {
-    margin-top: 0 !important;
-}
-
-#wpadminbar {
-    opacity: 0;
-    &:hover {
-        opacity: 1;
-    }
-} */
-
 .logged-in .section--header {
     top: 32px;
+}
+.logged-in .section--main {
+    min-height: calc(100vh - 32px);
 }
 
 .section--footer {
     font-size: var(--font-size-s);
     line-height: var(--line-height-s);
+}
+
+.module--branding {
+    position: relative;
+    background: transparent;
+    * {
+        /* color: #fff; */
+    }
+}
+
+.module--branding::after {
+    content: "";
+    position: absolute;
+
+    right: 0;
+    top: -1.5rem;
+
+    background: radial-gradient(
+            circle at top -4rem right -5rem,
+            var(--color-primary),
+            transparent 30rem
+        ),
+        radial-gradient(
+            circle at top 0 right 10rem,
+            var(--color-secondary-darker),
+            transparent 40rem
+        );
+    height: 5.5rem;
+    width: 80rem;
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+.home .module--branding::after {
+    height: 100vh;
+}
+
+.nav-main .sub-menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -100rem;
+    height: 8rem;
+
+    background: radial-gradient(
+        ellipse at top 0 left 0,
+        var(--color-transparent-light),
+        transparent 100rem
+    );
+    z-index: -1;
+    pointer-events: none;
 }

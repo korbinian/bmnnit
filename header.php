@@ -24,7 +24,6 @@
 					array(
 						'theme_location' => 'nav-main',
 						'menu_id'        => 'nav-main',
-						// 'walker'         => new BMNNIT_Walker(),
 					)
 				);
 				?>
@@ -33,6 +32,11 @@
 		<div class="module module--widgets-topbar">
 			<div class="widgets-topbar">
 				<?php dynamic_sidebar( 'widgets-topbar' ); ?>
+			</div>
+		</div>
+		<div class="module module--widgets-topright">
+			<div class="widgets-topright">
+				<?php dynamic_sidebar( 'widgets-topright' ); ?>
 			</div>
 		</div>
 	</header>

@@ -11,9 +11,13 @@
     --font-stack-plex-sans: "Plex Sans", sans-serif;
     --font-stack-plex-sans-condensed: "Plex Sans Condensed", sans-serif;
     --font-stack-plex-mono: "Plex Mono", sans-serif;
+    --font-stack-space-grotesk: "Space Grotesk", sans-serif;
+    --font-stack-space-mono: "Space Mono", sans-serif;
+    --font-stack-archivo: "Archivo", sans-serif;
 
-    --font-family-copy: var(--font-stack-plex-sans);
-    --font-family-display: var(--font-stack-plex-sans-condensed);
+    --font-family-copy: var(--font-stack-space-grotesk);
+    --font-family-display: var(--font-stack-space-grotesk);
+    --font-family-mono: var(--font-stack-space-mono);
 
     /* FONT SIZES ////////////////////////////////////////////////////////////*/
 

@@ -1,0 +1,19 @@
+/*  MODULE: NAV FOOTER
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--nav-footer {
+    font-family: var(--font-stack-plex-sans-condensed);
+    font-weight: 500;
+}
+
+.nav-footer {
+    & .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--xs) var(--m);
+    }
+    & .sub-menu {
+        /* display: none; */
+    }
+}

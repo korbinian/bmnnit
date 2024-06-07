@@ -1,3 +1,5 @@
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -40,4 +42,21 @@
 			?>
 		</footer>
 	<?php endif; ?>
+
+
+
+	
 </article>
+
+<div class="module module--nav-sidebar">
+			<nav class="nav-sidebar">
+				<?php wp_nav_menu(
+					array(
+						'theme_location' => 'nav-sidebar',
+						'menu_id'        => 'nav-sidebar',
+						// 'walker'         => new BMNNIT_Walker(),
+					)
+				);
+				?>
+			</nav>
+		</div>

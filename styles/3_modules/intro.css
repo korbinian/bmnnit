@@ -2,30 +2,34 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .module--intro {
-    margin-bottom: var(--xl);
+    margin-bottom: var(--xl) !important;
 }
 
 .intro {
     font-size: var(--font-size-xxl);
     line-height: 1.4;
-    font-weight: 500;
-    color: var(--color-secondary-darker);
+    /* font-weight: 500; */
+    /* color: var(--color-secondary-darker); */
 }
 
 .intro b {
-    font-family: var(--font-stack-plex-mono);
+    /* font-family: var(--font-stack-plex-mono); */
 
-    background-color: var(--color-secondary-dark);
+    /* background-color: var(--color-secondary-dark);
     color: var(--color-secondary-light);
     padding-inline: 0.75rem;
     border-radius: var(--border-radius);
-    margin-right: 0.25rem;
+    margin-right: 0.25rem; */
 
-    line-height: 2;
+    line-height: 1.2;
+    /* color: var(--color-secondary-darker); */
+    font-weight: 700;
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xxxl);
 }
 
 .typed-cursor {
     display: none;
-    font-family: var(--font-stack-plex-mono);
-    font-weight: 700;
+    font-family: var(--font-family-mono);
+    /* font-weight: 700; */
 }

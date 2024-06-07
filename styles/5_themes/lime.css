@@ -14,11 +14,11 @@ body:has(.theme--lime:hover) {
     --color-primary-darker: var(--color-lime-600);
     --color-primary-dark: var(--color-lime-900);
 
-    --color-secondary: var(--color-indigo-500);
-    --color-secondary-lighter: var(--color-indigo-400);
-    --color-secondary-light: var(--color-indigo-50);
-    --color-secondary-darker: var(--color-indigo-600);
-    --color-secondary-dark: var(--color-indigo-900);
+    --color-secondary: var(--color-blue-500);
+    --color-secondary-lighter: var(--color-blue-400);
+    --color-secondary-light: var(--color-blue-50);
+    --color-secondary-darker: var(--color-blue-600);
+    --color-secondary-dark: var(--color-blue-900);
 
     --color-text-light: var(--color-neutral-light);
     --color-text-dark: var(--color-neutral-dark);

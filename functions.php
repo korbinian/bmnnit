@@ -25,7 +25,6 @@ function bmnnit_setup() {
 	register_nav_menus(
 		array(
 			'nav-main' => esc_html__( 'Nav Main', 'bmnnit' ),
-			'nav-left' => esc_html__( 'Nav Left', 'bmnnit' ),
 			'nav-sidebar' => esc_html__( 'Nav Sidebar', 'bmnnit' ),
 			'nav-footer' => esc_html__( 'Nav Footer', 'bmnnit' ),
 		)
@@ -53,8 +52,8 @@ function fundus_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Widgets Sidebar', 'bmnnit' ),
-			'id'            => 'widgets-sidebar',
+			'name'          => esc_html__( 'Widgets Top Right', 'bmnnit' ),
+			'id'            => 'widgets-topright',
 			'description'   => esc_html__( 'Add widgets here.', 'bmnnit' ),
 			'before_widget' => '<div id="%1$s" class="sidebar  %2$s">',
 			'after_widget'  => '</div>',

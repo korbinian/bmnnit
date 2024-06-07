@@ -6,6 +6,8 @@
 
 .branding {
     /* text-align: center; */
+
+    color: var(--color-text-light);
 }
 
 .branding__logo {
@@ -14,6 +16,7 @@
 }
 
 .branding__title {
+    font-family: var(--font-stack-plex-sans-condensed);
     font-size: var(--font-size-l);
     line-height: 2rem;
 }
