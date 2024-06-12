@@ -13,7 +13,7 @@
 		<div class="module module--branding">
 			<div class="branding">
 				<h1 class="branding__title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">bmnn<b>IT</b><span>|</span></a></h1>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><b class="cursor">></b>bmnn<b>IT</b><span>|</span></a></h1>
 
 			</div>
 		</div>

@@ -1,6 +1,11 @@
 /*  LAYOUT: DESKTOP
 //////////////////////////////////////////////////////////////////////////////*/
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -16,7 +21,7 @@ body {
 /*  HEADER ///////////////////////////////////////////////////////////////////*/
 
 .section--header {
-    grid-template-rows: 1.5rem 1rem 2rem 1rem;
+    grid-template-rows: 2rem 1rem 2rem 1rem;
     z-index: 3;
     position: fixed;
     top: 0;
@@ -59,11 +64,12 @@ body {
 
 .section--main {
     position: relative;
-    min-height: calc(100vh);
     z-index: 1;
     padding-top: 10rem;
-    padding-bottom: var(--m);
-    margin-bottom: 50vh;
+    padding-bottom: 6rem;
+    min-height: 100vh;
+    width: 100%;
+    align-items: start;
     & .area--content,
     & .hentry,
     & .entry-header,
@@ -74,30 +80,33 @@ body {
         grid-template-columns: 1fr repeat(15, 4rem) 1fr;
         column-gap: var(--m);
         position: relative;
+        height: min-content;
+        grid-template-rows: min-content;
     }
-    &::before {
-        content: "";
-        background: #fff;
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-    }
-    & article {
+    & .area--content,
+    & .area--sidebar {
         grid-row: 1;
     }
-    & .module--nav-sidebar {
+    & .area--sidebar {
         grid-column: 2/4;
-        grid-row: 1;
+        padding-top: 4rem;
+        position: sticky;
+        top: 5rem;
+        z-index: 99999;
     }
+}
+
+.home .section--main .area--sidebar {
+    top: 10rem;
 }
 
 /*  FOOTER ///////////////////////////////////////////////////////////////////*/
 
 .section--footer {
     position: fixed;
-    height: 50vh;
+    position: sticky;
+    top: 100vh;
+    /* height: 50vh; */
     bottom: 0;
     left: 0;
     right: 0;
@@ -107,7 +116,7 @@ body {
     place-items: center;
     grid-template-rows: 1fr min-content min-content min-content;
     row-gap: 1rem;
-
+    z-index: 10;
     > .module--widgets {
         grid-column: 5 /-5;
         grid-row: 2;

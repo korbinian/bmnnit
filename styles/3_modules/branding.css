@@ -2,8 +2,13 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .module--branding {
+    position: relative;
+    background: transparent;
 }
 
+/* body:not(.home) .module--branding::after {
+    height: 5.5rem;
+} */
 .branding {
     /* text-align: center; */
 
@@ -17,15 +22,23 @@
 
 .branding__title {
     font-family: var(--font-stack-plex-sans-condensed);
+    /* font-family: var(--font-family-mono); */
     font-size: var(--font-size-l);
     line-height: 2rem;
+    .cursor {
+        /* color: red; */
+        /* color: black; */
+        font-family: var(--font-family-mono);
+        display: none;
+    }
 }
 .branding__title a {
     text-decoration: none;
 }
 .branding__title b {
-    font-family: var(--font-stack-plex-sans);
+    font-family: var(--font-stack-plex-mono);
     font-weight: 600;
+    /* font-family: var(--font-family-mono); */
 }
 
 .branding__title span {

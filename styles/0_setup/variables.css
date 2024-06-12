@@ -36,7 +36,7 @@
     --line-height-m: calc(30 / 20);
     --line-height-l: calc(32 / 24);
     --line-height-xl: calc(42 / 32);
-    --line-height-xxl: calc(48 / 40);
+    --line-height-xxl: calc(50 / 40);
     --line-height-xxxl: calc(66 / 60);
 
     --line-height-copy: var(--line-height-m);

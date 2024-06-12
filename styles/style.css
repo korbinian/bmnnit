@@ -64,18 +64,25 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 @import "5_themes/default.css";
-@import "5_themes/red.css";
-@import "5_themes/orange.css";
-@import "5_themes/yellow.css";
-@import "5_themes/lime.css";
-@import "5_themes/green.css";
-@import "5_themes/cyan.css";
-@import "5_themes/teal.css";
-@import "5_themes/blue.css";
-@import "5_themes/indigo.css";
-@import "5_themes/purple.css";
-@import "5_themes/pink.css";
-@import "5_themes/grey.css";
+
+@import "5_themes/categories/1.css";
+@import "5_themes/categories/2.css";
+@import "5_themes/categories/3.css";
+@import "5_themes/categories/4.css";
+@import "5_themes/categories/5.css";
+
+@import "5_themes/colors/red.css";
+@import "5_themes/colors/orange.css";
+@import "5_themes/colors/yellow.css";
+@import "5_themes/colors/lime.css";
+@import "5_themes/colors/green.css";
+@import "5_themes/colors/cyan.css";
+@import "5_themes/colors/teal.css";
+@import "5_themes/colors/blue.css";
+@import "5_themes/colors/indigo.css";
+@import "5_themes/colors/purple.css";
+@import "5_themes/colors/pink.css";
+@import "5_themes/colors/grey.css";
 
 /*//////////////////////////////////////////////////////////////////////////////
 //	UTILITIES
@@ -101,64 +108,4 @@
 
 .logged-in .section--header {
     top: 32px;
-}
-.logged-in .section--main {
-    min-height: calc(100vh - 32px);
-}
-
-.section--footer {
-    font-size: var(--font-size-s);
-    line-height: var(--line-height-s);
-}
-
-.module--branding {
-    position: relative;
-    background: transparent;
-    * {
-        /* color: #fff; */
-    }
-}
-
-.module--branding::after {
-    content: "";
-    position: absolute;
-
-    right: 0;
-    top: -1.5rem;
-
-    background: radial-gradient(
-            circle at top -4rem right -5rem,
-            var(--color-primary),
-            transparent 30rem
-        ),
-        radial-gradient(
-            circle at top 0 right 10rem,
-            var(--color-secondary-darker),
-            transparent 40rem
-        );
-    height: 5.5rem;
-    width: 80rem;
-    z-index: -1;
-
-    pointer-events: none;
-}
-
-.home .module--branding::after {
-    height: 100vh;
-}
-
-.nav-main .sub-menu::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: -100rem;
-    height: 8rem;
-
-    background: radial-gradient(
-        ellipse at top 0 left 0,
-        var(--color-transparent-light),
-        transparent 100rem
-    );
-    z-index: -1;
-    pointer-events: none;
 }

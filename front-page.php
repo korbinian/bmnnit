@@ -12,6 +12,9 @@
 			?>
 
 		</div>
+		<aside class="area area--sidebar sidebar">
+
+		</aside>
 	</main>
 
 <?php get_footer(); ?>

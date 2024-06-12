@@ -3,7 +3,7 @@
 
 .module--widgets-topbar {
     font-size: var(--font-size-xs);
-    line-height: 1.5rem;
+    line-height: 2rem;
     font-weight: var(--font-weight-bold);
     font-family: var(--font-stack-inter);
 }

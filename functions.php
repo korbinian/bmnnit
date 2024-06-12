@@ -92,16 +92,7 @@ function bmnnit_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'bmnnit_scripts' );
 
-function bmnnit_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Widgets', 'bmnnit' ),
-			'id'            => 'widgets-1',
-			'description'   => esc_html__( 'Add widgets here.', 'bmnnit' ),
-		)
-	);
-}
-add_action( 'widgets_init', 'bmnnit_widgets_init' );
+
 
 
 

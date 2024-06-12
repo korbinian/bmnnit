@@ -30,6 +30,20 @@
 		endif;
 		?>
 		</div>
+		<aside class="area area--sidebar sidebar">
+		<div class="module module--nav-sidebar">
+			<nav class="nav-sidebar">
+				<?php wp_nav_menu(
+					array(
+						'theme_location' => 'nav-sidebar',
+						'menu_id'        => 'nav-sidebar',
+						// 'walker'         => new BMNNIT_Walker(),
+					)
+				);
+				?>
+			</nav>
+		</div>
+		</aside>
 	</main>
 
 <?php get_footer(); ?>

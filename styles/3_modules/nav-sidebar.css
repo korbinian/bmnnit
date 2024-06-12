@@ -2,7 +2,12 @@
     font-size: var(--font-size-s);
     font-family: var(--font-stack-plex-sans-condensed);
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1.2;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: var(--s);
+    }
     a {
         text-decoration: none;
         display: block;
