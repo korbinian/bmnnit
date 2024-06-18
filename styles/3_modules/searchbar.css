@@ -23,8 +23,9 @@
     padding: 0;
     grid-column: 1 / -1;
     grid-row: 1;
-    background-color: rgba(0, 0, 0, 0.1);
+    sbackground-color: rgba(0, 0, 0, 0.1);
     /* background-color: var(--color-transparent-dark); */
+    outline: var(--border);
     border-radius: var(--border-radius);
     border-color: transparent;
     padding: 0 calc(2rem + var(--s)) 0 var(--s);

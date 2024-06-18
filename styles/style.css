@@ -30,6 +30,7 @@
 
 @import "2_blocks/details.css";
 @import "2_blocks/image.css";
+@import "2_blocks/query.css";
 
 /*//////////////////////////////////////////////////////////////////////////////
 //	MODULES
@@ -45,10 +46,15 @@
 @import "3_modules/widgets-topright.css";
 @import "3_modules/widgets-footer.css";
 @import "3_modules/article.css";
+@import "3_modules/posts.css";
+@import "3_modules/post.css";
+@import "3_modules/post-navigation.css";
 @import "3_modules/intro.css";
 @import "3_modules/searchbar.css";
 @import "3_modules/services.css";
 @import "3_modules/meta.css";
+@import "3_modules/cta.css";
+@import "3_modules/page-title.css";
 
 /*/ /////////////////////////////////////////////////////////////////////////////
 //	LAYOUT

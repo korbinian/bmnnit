@@ -14,12 +14,14 @@
         font-size: var(--font-size-m);
         line-height: var(--line-height-m);
     }
-    .text-l {
-        font-size: var(--font-size-l);
+    .text-l,
+    .has-large-font-size {
+        font-size: var(--font-size-l) !important;
         line-height: var(--line-height-l);
     }
-    .text-xl {
-        font-size: var(--font-size-xl);
+    .text-xl,
+    .has-x-large-font-size {
+        font-size: var(--font-size-xl) !important;
         line-height: var(--line-height-xl);
     }
     .text-xxl {

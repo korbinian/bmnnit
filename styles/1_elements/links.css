@@ -3,9 +3,11 @@
 
 a {
     text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
     color: inherit;
+    text-underline-offset: 0.15em;
+    text-decoration-thickness: 0.1em;
+    text-decoration-thickness: 2px;
+    transition: all 0.1s;
 }
 
 a:link {
@@ -13,6 +15,10 @@ a:link {
 a:visited {
 }
 a:hover {
+    stext-underline-offset: 0.2em;
+    text-decoration-color: transparent;
+    transition: all 0.1s;
+    color: var(--color-secondary-dark);
 }
 a:active {
 }

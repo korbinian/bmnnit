@@ -2,4 +2,12 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .wp-block-query {
+    .hentry {
+        display: block !important;
+    }
+}
+
+.wp-block-post-date {
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-s);
 }

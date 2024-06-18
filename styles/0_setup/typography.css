@@ -82,3 +82,8 @@ p:empty {
 .article__body > *:last-child {
     margin-bottom: 0;
 }
+
+code,
+pre {
+    font-family: var(--font-family-mono);
+}

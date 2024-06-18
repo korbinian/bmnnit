@@ -46,7 +46,8 @@ h5,
 h6 {
     font-size: inherit;
     line-height: inherit;
-    font-weight: inherit;
+    font-weight: 700;
+    color: var(--color-secondary-dark);
 }
 
 h1:has(+ h2) {
@@ -67,4 +68,25 @@ h6:has(+ h6) {
 
 strong:where(h1, h2, h3, h4, h5, h6) {
     font-weight: 700;
+}
+
+.entry-content {
+    h1 {
+        font-size: var(--font-size-xxl);
+        line-height: var(--line-height-xxl);
+    }
+    h2 {
+        font-size: var(--font-size-xl);
+        line-height: var(--line-height-xl);
+    }
+    h3 {
+        font-size: var(--font-size-l);
+        line-height: var(--line-height-l);
+    }
+    h4,
+    h5,
+    h6 {
+        font-size: var(--font-size-m);
+        line-height: var(--line-height-m);
+    }
 }

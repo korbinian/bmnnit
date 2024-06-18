@@ -17,3 +17,8 @@
 .mix-blend {
     mix-blend-mode: multiply;
 }
+
+.highlight {
+    color: var(--color-primary);
+    font-weight: bold;
+}

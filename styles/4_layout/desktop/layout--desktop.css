@@ -13,50 +13,51 @@ body {
 
 .section {
     display: grid;
-    grid-template-columns: 1fr repeat(15, 4rem) 1fr;
-    column-gap: var(--m);
+    grid-template-columns: 1fr repeat(15, 5rem) 1fr;
+    scolumn-gap: var(--m);
     position: relative;
 }
 
 /*  HEADER ///////////////////////////////////////////////////////////////////*/
 
 .section--header {
-    grid-template-rows: 2rem 1rem 2rem 1rem;
+    grid-template-rows: 2rem 1rem 2rem 2rem calc(1rem - var(--border-width));
     z-index: 3;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    border-bottom: var(--border);
     .module--branding {
         grid-column: 1 / 4;
-        grid-row: 2/5;
+        grid-row: 1/6;
         display: grid;
-        grid-template-columns: 1fr 4rem 4rem;
-        grid-template-rows: 1rem 2rem 1rem;
-        column-gap: 1rem;
+        grid-template-columns: 1fr 5rem 5rem;
+        grid-template-rows: subgrid;
+
         & .branding {
-            grid-column: 2 /-1;
-            grid-row: 2;
+            grid-column: 1 /-1;
+            grid-row: 3;
+            padding-left: 2rem;
         }
     }
 
     .module--nav-main {
         grid-column: 5/ 14;
-        grid-row: 2/5;
+        grid-row: 3;
     }
     .module--widgets-topbar {
         grid-column: 1/ -1;
         grid-row: 1;
         display: grid;
-        grid-template-columns: 1fr repeat(15, 4rem) 1fr;
-        column-gap: var(--m);
+        grid-template-columns: 1fr repeat(15, 5rem) 1fr;
         & > * {
             grid-column: 5 /-2;
         }
     }
     .module--widgets-topright {
         grid-column: 14/ -1;
-        grid-row: 2/5;
+        grid-row: 3;
     }
 }
 
@@ -65,20 +66,19 @@ body {
 .section--main {
     position: relative;
     z-index: 1;
-    padding-top: 10rem;
-    padding-bottom: 6rem;
+
     min-height: 100vh;
     width: 100%;
     align-items: start;
     & .area--content,
-    & .hentry,
-    & .entry-header,
-    & .entry-content,
-    & .entry-footer {
+    & .area--sidebar {
+        margin-top: 8rem;
+    }
+
+    & .reference-list {
         grid-column: 1/-1;
         display: grid;
-        grid-template-columns: 1fr repeat(15, 4rem) 1fr;
-        column-gap: var(--m);
+        grid-template-columns: 1fr repeat(15, 5rem) 1fr;
         position: relative;
         height: min-content;
         grid-template-rows: min-content;
@@ -88,16 +88,48 @@ body {
         grid-row: 1;
     }
     & .area--sidebar {
-        grid-column: 2/4;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 10rem;
+        padding-top: 10.5rem;
+        padding-bottom: 4rem;
+
+        align-self: start;
+        > * {
+            grid-column: 2/3;
+            padding-right: 1rem;
+        }
+    }
+    & .area--content {
+        grid-column: 4 / -1;
+        display: grid;
+        grid-template-columns: repeat(13, 5rem) 1fr;
+        align-self: stretch;
+        & .hentry,
+        & .entry-header,
+        & .entry-content,
+        & .entry-footer {
+            display: grid;
+            grid-template-columns: repeat(13, 5rem) 1fr;
+            grid-column: 1 / -1;
+        }
+        & .entry-header,
+        & .entry-content,
+        & .entry-footer {
+            > * {
+                grid-column: 2 / -2;
+            }
+        }
+    }
+    & .page-title {
+        grid-column: 2 /-2;
         padding-top: 4rem;
-        position: sticky;
-        top: 5rem;
-        z-index: 99999;
+        padding-bottom: 2rem;
     }
 }
 
 .home .section--main .area--sidebar {
-    top: 10rem;
+    top: 9rem;
 }
 
 /*  FOOTER ///////////////////////////////////////////////////////////////////*/
@@ -106,17 +138,17 @@ body {
     position: fixed;
     position: sticky;
     top: 100vh;
-    /* height: 50vh; */
+    /* height: 25vh; */
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 0;
     padding-block: var(--l);
     display: grid;
-    place-items: center;
+    place-items: start;
     grid-template-rows: 1fr min-content min-content min-content;
     row-gap: 1rem;
-    z-index: 10;
+    z-index: -1;
     > .module--widgets {
         grid-column: 5 /-5;
         grid-row: 2;

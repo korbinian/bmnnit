@@ -9,11 +9,11 @@ body {
     --color-neutral-light: var(--color-grey-50);
     --color-neutral-dark: var(--color-grey-900);
 
-    --color-primary: var(--color-red-500);
-    --color-primary-lighter: var(--color-red-400);
-    --color-primary-light: var(--color-red-50);
-    --color-primary-darker: var(--color-red-600);
-    --color-primary-dark: var(--color-red-900);
+    --color-primary: var(--color-green-500);
+    --color-primary-lighter: var(--color-green-400);
+    --color-primary-light: var(--color-green-50);
+    --color-primary-darker: var(--color-green-600);
+    --color-primary-dark: var(--color-green-900);
 
     --color-secondary: var(--color-teal-500);
     --color-secondary-lighter: var(--color-teal-400);
@@ -23,7 +23,7 @@ body {
 
     --color-text-light: var(--color-neutral-light);
     --color-text-dark: var(--color-neutral-dark);
-    --color-text-on-primary: var(--color-primary-light);
+    --color-text-on-primary: var(--color-primary-dark);
     --color-text-on-secondary: var(--color-secondary-light);
 
     --color-transparent-light: color-mix(
@@ -38,17 +38,12 @@ body {
     );
 }
 
-body {
-}
-
 .section--header {
-    color: var(--color-text-light);
-    sbackground: var(--color-transparent-light);
-    sbackdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.95);
 }
-
 .section--header .module--widgets-topbar {
-    background: var(--color-transparent-dark);
+    scolor: var(--color-text-dark);
+    sbackground: var(--color-blue-50);
 }
 
 .section--main {
@@ -56,105 +51,14 @@ body {
 }
 
 .section--footer {
-    background-color: var(--color-secondary-dark);
-    color: var(--color-text-on-secondary);
+    sbackground-color: var(--color-blue-900);
+    scolor: var(--color-text-on-secondary);
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-s);
     & * {
         color: inherit;
     }
-    &::before {
-        content: "";
-        position: absolute;
-
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 50%;
-        background: linear-gradient(
-            to bottom,
-            var(--color-transparent-dark),
-            transparent 10rem
-        );
-        pointer-events: none;
-    }
-}
-
-/* .module--branding::after {
-    content: "";
-    position: absolute;
-
-    right: -1rem;
-    top: -1.5rem;
-
-    background: radial-gradient(
-            circle at top -4rem right -5rem,
-            var(--color-primary),
-            transparent 30rem
-        ),
-        radial-gradient(
-            circle at top 0 right 10rem,
-            var(--color-secondary-darker),
-            transparent 40rem
-        );
-    width: 80rem;
-    z-index: -1;
-    height: 100vh;
-    pointer-events: none;
-} */
-
-.area--sidebar::before {
-    content: "";
-    /* position: absolute;
-
-    sright: -1rem;
-    top: -1.5rem; */
-
-    background: radial-gradient(
-            circle at top -4rem right -5rem,
-            var(--color-primary),
-            transparent 30rem
-        ),
-        radial-gradient(
-            circle at top 0 right 10rem,
-            var(--color-secondary-darker),
-            transparent 40rem
-        );
-    /* width: 80rem; */
-    z-index: -1;
-    height: 80rem;
-    pointer-events: none;
-    grid-column: 1 /4;
-    grid-row: 1;
-    margin-top: -10rem;
-    margin-right: -1rem;
-    /* position: fixed; */
-    top: 0;
-    right: 0;
-    width: 100rem;
-    position: absolute;
 }
 
 .section--footer {
-    font-size: var(--font-size-s);
-    line-height: var(--line-height-s);
-}
-
-.area--content {
-    position: relative;
-    &::before {
-        content: "";
-
-        background: radial-gradient(
-            ellipse at top left,
-            var(--color-secondary),
-            transparent 64rem
-        );
-        /* opacity: 0.3; */
-        background-repeat: no-repeat;
-        grid-column: 4/ -2;
-        grid-row: 1;
-        margin-top: -10rem;
-        position: fixed;
-        width: 64rem;
-        height: 12rem;
-    }
 }

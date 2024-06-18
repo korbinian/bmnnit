@@ -1,2 +1,27 @@
 /*  MODULE: CTA BUTTON
 //////////////////////////////////////////////////////////////////////////////*/
+
+.cta {
+    & a {
+        border-radius: var(--border-radius);
+        background-color: var(--color-primary);
+        background: radial-gradient(
+            ellipse at top left,
+            var(--color-primary),
+            var(--color-primary-darker)
+        );
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        color: var(--color-text-on-primary);
+        &::after {
+            content: "→";
+            color: var(--color-primary-dark);
+            transform: translateX(0);
+        }
+        &:hover::after {
+            transform: translateX(0.25rem) !important;
+        }
+        &:active::after {
+            transform: translateX(0.5rem) !important;
+        }
+    }
+}

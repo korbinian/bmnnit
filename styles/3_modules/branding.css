@@ -4,15 +4,18 @@
 .module--branding {
     position: relative;
     background: transparent;
+    color: #fff;
+    background-color: var(--color-black);
+    background-color: var(--color-blue-900);
 }
 
-/* body:not(.home) .module--branding::after {
-    height: 5.5rem;
-} */
 .branding {
-    /* text-align: center; */
+    font-weight: 500;
 
-    color: var(--color-text-light);
+    & * {
+        font-weight: inherit;
+        color: inherit;
+    }
 }
 
 .branding__logo {
@@ -21,35 +24,39 @@
 }
 
 .branding__title {
-    font-family: var(--font-stack-plex-sans-condensed);
-    /* font-family: var(--font-family-mono); */
-    font-size: var(--font-size-l);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xl);
     line-height: 2rem;
     .cursor {
-        /* color: red; */
-        /* color: black; */
-        font-family: var(--font-family-mono);
         display: none;
     }
 }
 .branding__title a {
     text-decoration: none;
+    &:hover {
+        color: var(--color-primary);
+    }
 }
 .branding__title b {
-    font-family: var(--font-stack-plex-mono);
-    font-weight: 600;
-    /* font-family: var(--font-family-mono); */
+    font-family: var(--font-family-mono);
+    font-weight: inherit;
 }
 
 .branding__title span {
     animation-duration: 0.3s;
-    animation-name: slidein;
+    animation-name: blink;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    font-family: var(--font-stack-plex-sans);
-    font-weight: 600;
+    font-weight: 900;
+    color: var(--color-primary);
 }
-@keyframes slidein {
+
+.branding__tagline {
+    font-size: var(--font-size-xs);
+    color: var(--color-primary);
+    spadding-left: 2rem;
+}
+@keyframes blink {
     from {
         opacity: 0;
     }
@@ -57,9 +64,4 @@
     to {
         opacity: 1;
     }
-}
-
-.branding__tagline {
-    font-size: var(--font-size-s);
-    line-height: 1.5rem;
 }

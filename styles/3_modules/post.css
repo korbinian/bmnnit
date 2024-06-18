@@ -1,0 +1,10 @@
+.post {
+}
+
+.post-thumbnail {
+    sgrid-column: 4 /-2 !important;
+    grid-column: 5 /-5 !important;
+    & img {
+        swidth: 100%;
+    }
+}

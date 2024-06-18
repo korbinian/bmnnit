@@ -14,10 +14,14 @@
     --font-stack-space-grotesk: "Space Grotesk", sans-serif;
     --font-stack-space-mono: "Space Mono", sans-serif;
     --font-stack-archivo: "Archivo", sans-serif;
+    --font-stack-fira-code: "Fira Code", sans-serif;
+    --font-stack-fira-sans: "Fira Sans", sans-serif;
+    --font-stack-fira-sans-condensed: "Fira Sans Condensed", sans-serif;
 
-    --font-family-copy: var(--font-stack-space-grotesk);
-    --font-family-display: var(--font-stack-space-grotesk);
-    --font-family-mono: var(--font-stack-space-mono);
+    --font-family-copy: var(--font-stack-fira-sans);
+    --font-family-nav: var(--font-stack-fira-sans-condensed);
+    --font-family-display: var(--font-stack-fira-sans);
+    --font-family-mono: var(--font-stack-fira-code);
 
     /* FONT SIZES ////////////////////////////////////////////////////////////*/
 
@@ -214,7 +218,7 @@
     --border-width: 1px;
     --border-radius: 2px;
     --border-style: solid;
-    --border-color: var(--color-black);
+    --border-color: var(--color-grey-100);
     --border: var(--border-width) var(--border-style) var(--border-color);
 
     /* BOX SHADOWS ///////////////////////////////////////////////////////////*/

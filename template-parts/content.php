@@ -16,9 +16,10 @@
 				?>
 			</div>
 		<?php endif; ?>
+		<?php bmnnit_post_thumbnail(); ?>
 	</header>
 
-	<?php bmnnit_post_thumbnail(); ?>
+	
 
 	<div class="entry-content">
 		<?php

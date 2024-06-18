@@ -21,3 +21,10 @@ figure {
     font-size: var(--font-size-m);
     line-height: var(--line-height-m);
 }
+
+img.alignleft {
+    margin: 0 var(--m) var(--m) 0 !important;
+}
+img.alignright {
+    margin: 0 0 var(--m) var(--m) 0 !important;
+}
