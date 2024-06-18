@@ -2,41 +2,8 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .module--intro {
-    margin-bottom: var(--xl) !important;
-}
-
-.intro {
-    font-size: var(--font-size-xxl);
-    line-height: 1.4;
-    * {
-        font-weight: 400;
-        font-family: var(--font-family-mono);
-    }
 }
 
 .intro b {
-    font-weight: 900;
-    color: var(--color-secondary-darker);
-}
-
-.typed-cursor {
-    font-family: var(--font-family-mono);
-}
-
-.intro span {
-    animation-duration: 0.3s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    font-weight: 900;
-}
-
-@keyframes slidein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    height: 2rem;
 }

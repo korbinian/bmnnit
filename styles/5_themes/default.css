@@ -23,8 +23,8 @@ body {
 
     --color-text-light: var(--color-neutral-light);
     --color-text-dark: var(--color-neutral-dark);
-    --color-text-on-primary: var(--color-primary-dark);
-    --color-text-on-secondary: var(--color-secondary-light);
+    --color-text-on-primary: var(--color-primary-light);
+    --color-text-on-secondary: var(--color-secondary-dark);
 
     --color-transparent-light: color-mix(
         in oklab,
@@ -48,6 +48,10 @@ body {
 
 .section--main {
     background-color: var(--color-white);
+}
+
+.area--sidebar {
+    background-color: var(--color-primary-darker);
 }
 
 .section--footer {

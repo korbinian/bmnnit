@@ -13,7 +13,7 @@
     display: inline-block;
 }
 .display-block {
-    display: flex;
+    display: block;
 }
 .display-table {
     display: table;

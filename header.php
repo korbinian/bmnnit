@@ -31,7 +31,7 @@
 						});
 					</script>
 
-				<div class="branding__tagline">Johannes Baumann IT-Dienstleistungen</div>
+				<div class="branding__tagline">Baumann IT-Dienstleistungen</div>
 			</div>
 		</div>
 		<?php } else { ?>
@@ -40,7 +40,7 @@
 				<h1 class="branding__title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">~/<b>bmnn<b>IT</b></b></a>
 				</h1>
-				<div class="branding__tagline">Johannes Baumann IT-Dienstleistungen</div>
+				<div class="branding__tagline">Baumann IT-Dienstleistungen</div>
 			</div>
 		</div>
     	<?php } ?>

@@ -1,0 +1,172 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "appearanceTools": true,
+        "border": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true
+        },
+        "color": {
+            "link": false,
+            "defaultPalette": false,
+            "defaultGradients": true,
+            "defaultDuotone": false,
+            "custom": true,
+            "customGradient": true,
+            "customDuotone": true,
+            "palette": [
+                {
+                    "slug": "transparent",
+                    "color": "transparent",
+                    "name": "Transparent"
+                },
+                {
+                    "slug": "light",
+                    "color": "white",
+                    "name": "Dark"
+                },
+                {
+                    "slug": "dark",
+                    "color": "black",
+                    "name": "Light"
+                },
+                {
+                    "slug": "primary",
+                    "color": "red",
+                    "name": "Primary"
+                }
+            ]
+        },
+        "dimensions": {
+            "minHeight": false
+        },
+        "position": {
+            "sticky": false
+        },
+        "layout": {
+            "contentSize": "55rem",
+            "wideSize": "65rem"
+        },
+        "spacing": {
+            "blockGap": true,
+            "margin": true,
+            "padding": true,
+            "customSpacingSize": true,
+            "units": ["rem", "px"],
+            "spacingScale": {
+                "steps": 5
+            },
+            "spacingSizes": [
+                {
+                    "size": ".25rem",
+                    "slug": "xs",
+                    "name": "xs"
+                },
+                {
+                    "size": ".5rem",
+                    "slug": "s",
+                    "name": "s"
+                },
+                {
+                    "size": "1rem",
+                    "slug": "m",
+                    "name": "m"
+                },
+                {
+                    "size": "2rem",
+                    "slug": "l",
+                    "name": "l"
+                },
+                {
+                    "size": "4rem",
+                    "slug": "xl",
+                    "name": "xl"
+                }
+            ]
+        },
+        "typography": {
+            "lineHeight": false,
+            "customFontSize": false,
+            "letterSpacing": false,
+            "dropCap": false,
+            "fluid": false,
+            "fontFamilies": [
+                {
+                    "name": "Inter",
+                    "slug": "inter",
+                    "fontFamily": "\"Inter var\", sans-serif"
+                },
+                {
+                    "name": "Fira Code",
+                    "slug": "fira-code",
+                    "fontFamily": "'Fira Code', monospace"
+                },
+                {
+                    "name": "Fira Sans",
+                    "slug": "fira-sans",
+                    "fontFamily": "'Fira Sans', sans-serif"
+                },
+                {
+                    "name": "Fira Sans Condensed",
+                    "slug": "fira-sans-condensed",
+                    "fontFamily": "'Fira Sans Condensed', sans-serif"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "slug": "xs",
+                    "size": ".7rem",
+                    "name": "XS",
+                    "fluid": false
+                },
+                {
+                    "slug": "s",
+                    "size": ".8rem",
+                    "name": "S",
+                    "fluid": false
+                },
+                {
+                    "slug": "m",
+                    "size": "1rem",
+                    "name": "M",
+                    "fluid": false
+                },
+                {
+                    "slug": "l",
+                    "size": "1.2rem",
+                    "name": "L",
+                    "fluid": false
+                },
+                {
+                    "slug": "xl",
+                    "size": "1.6rem",
+                    "name": "XL",
+                    "fluid": false
+                },
+                {
+                    "slug": "xxl",
+                    "size": "2rem",
+                    "name": "XXL",
+                    "fluid": false
+                },
+                {
+                    "slug": "xxxl",
+                    "size": "3rem",
+                    "name": "XXXL",
+                    "fluid": false
+                }
+            ]
+        },
+        "useRootPaddingAwareAlignments": false,
+        "custom": {}
+    },
+    "styles": {
+        "color": {
+            "background": "var(--color-white)",
+            "text": "var(--color-black)"
+        }
+    }
+}

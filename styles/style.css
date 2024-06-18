@@ -30,6 +30,7 @@
 
 @import "2_blocks/details.css";
 @import "2_blocks/image.css";
+@import "2_blocks/buttons.css";
 @import "2_blocks/query.css";
 
 /*//////////////////////////////////////////////////////////////////////////////
@@ -55,6 +56,7 @@
 @import "3_modules/meta.css";
 @import "3_modules/cta.css";
 @import "3_modules/page-title.css";
+@import "3_modules/projects.css";
 
 /*/ /////////////////////////////////////////////////////////////////////////////
 //	LAYOUT
@@ -114,4 +116,11 @@
 
 .logged-in .section--header {
     top: 32px;
+}
+
+.home {
+    .sub-menu {
+        opacity: 1 !important;
+        pointer-events: all !important;
+    }
 }
