@@ -16,11 +16,16 @@
 			?>
 		</nav>
 	</div>
-	<div class="module module--meta">
-		<div class="meta">
-		Baumann IT-Dienstleistungen | Wasserburgerstr. 2 | 83530 Schnaitsee | +49 8074 2609860 
+	<div class="module module--contactbar">
+		<div class="contactbar">
+			<address>
+				<b>Johannes Baumann IT-Dienstleistungen</b>
+				<span class="has-icon has-icon--location">Wasserburgerstraße 2 83530 Schnaitsee</span>
+				<span class="has-icon has-icon--phone"><a href="tel:+4980715272504">+49 8071 5272504</a></span>
+			</address>
 		</div>
 	</div>
+
 </footer>
 <?php wp_footer(); ?>
 

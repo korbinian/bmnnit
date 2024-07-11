@@ -87,3 +87,7 @@ code,
 pre {
     font-family: var(--font-family-mono);
 }
+
+address {
+    font-style: normal;
+}

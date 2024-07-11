@@ -52,6 +52,9 @@
             & .menu-item-has-children > a::after {
                 content: "↓";
             }
+            & .current-menu-item {
+                color: var(--color-primary);
+            }
             & > .menu-item:hover > a::after,
             & .current-menu-item > a::after,
             & .current-menu-ancestor > a::after {
@@ -64,12 +67,11 @@
                 opacity: 0;
                 pointer-events: none;
                 right: 0;
-                background: #fff;
                 & a {
                     padding-right: 0;
                 }
             }
-            & li:hover > .sub-menu,
+            /* & li:hover > .sub-menu, */
             & .current-menu-item > .sub-menu,
             & .current-menu-ancestor .sub-menu {
                 opacity: 1;
@@ -77,7 +79,7 @@
             }
         }
         & .cta {
-            margin-left: var(--m);
+            margin-left: auto;
             z-index: 1;
             position: relative;
         }

@@ -1,7 +1,7 @@
 /*  MODULE: CTA BUTTON
 //////////////////////////////////////////////////////////////////////////////*/
 
-.cta {
+.cta a {
     display: grid;
     place-items: center start;
     grid-template-columns: max-content min-content;
@@ -13,11 +13,7 @@
     color: inherit;
     border-radius: var(--border-radius);
     background-color: var(--color-primary);
-    background: radial-gradient(
-        ellipse at top left,
-        var(--color-primary),
-        var(--color-primary-darker)
-    );
+    background: radial-gradient(ellipse at top left, var(--color-primary), var(--color-primary-darker));
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     color: var(--color-text-on-primary);
     transition: all 0.3s;

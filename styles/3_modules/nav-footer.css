@@ -7,11 +7,20 @@
 }
 
 .nav-footer {
+    margin-left: calc(var(--s) * -1);
+    a {
+        text-decoration: none;
+        outline-color: var(--color-grey-200);
+        padding: var(--xs) var(--s);
+        &:hover {
+            outline: var(--border);
+        }
+    }
     & .menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: var(--xs) var(--m);
+        gap: var(--xs) var(--s);
     }
     & .sub-menu {
         /* display: none; */

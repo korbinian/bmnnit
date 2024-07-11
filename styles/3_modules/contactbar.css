@@ -1,0 +1,50 @@
+/*  MODULE: CONTACTBAR
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--contactbar {
+}
+
+.contactbar {
+    font-weight: 100;
+    a {
+        color: var(--color-primary);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    b {
+        font-weight: 900;
+    }
+    address {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--s);
+    }
+    .has-icon {
+        display: flex;
+        align-items: center;
+        gap: var(--xs);
+        &::before {
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            background-size: 100%;
+        }
+    }
+    .has-icon--location::before {
+        background-image: url("../../images/icons/icon--location.svg");
+    }
+    .has-icon--phone::before {
+        background-image: url("../../images/icons/icon--phone.svg");
+    }
+}
+
+.section--footer .contactbar {
+    .has-icon--location::before {
+        background-image: url("../../images/icons/icon--location--black.svg");
+    }
+    .has-icon--phone::before {
+        background-image: url("../../images/icons/icon--phone--black.svg");
+    }
+}

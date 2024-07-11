@@ -26,20 +26,16 @@ body {
     --color-text-on-primary: var(--color-primary-light);
     --color-text-on-secondary: var(--color-secondary-dark);
 
-    --color-transparent-light: color-mix(
-        in oklab,
-        var(--color-secondary),
-        transparent 60%
-    );
-    --color-transparent-dark: color-mix(
-        in oklab,
-        var(--color-secondary-dark),
-        transparent 20%
-    );
+    --color-transparent-light: color-mix(in oklab, var(--color-secondary), transparent 60%);
+    --color-transparent-dark: color-mix(in oklab, var(--color-secondary-dark), transparent 20%);
 }
 
 .section--header {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.8);
+    /* 
+    background-image: radial-gradient(#fff 1.7000000000000002px, transparent 1.7000000000000002px);
+    background-size: 4px 4px; */
+    backdrop-filter: grayscale(1);
 }
 .section--header .module--widgets-topbar {
     scolor: var(--color-text-dark);
@@ -48,10 +44,10 @@ body {
 
 .section--main {
     background-color: var(--color-white);
+    background-color: var(--color-neutral-light);
 }
 
 .area--sidebar {
-    background-color: var(--color-neutral-light);
 }
 
 .section--footer {
@@ -66,4 +62,11 @@ body {
 
 .section--footer {
     border-top: var(--border);
+}
+
+.entry-header {
+    background: rgba(255, 255, 255, 0.85);
+    /* background-image: radial-gradient(#fff 1.7000000000000002px, transparent 1.7000000000000002px);
+    background-size: 4px 4px; */
+    backdrop-filter: grayscale(1);
 }

@@ -46,6 +46,7 @@
 @import "3_modules/widgets-topbar.css";
 @import "3_modules/widgets-topright.css";
 @import "3_modules/widgets-footer.css";
+@import "3_modules/contactbar.css";
 @import "3_modules/article.css";
 @import "3_modules/posts.css";
 @import "3_modules/post.css";
@@ -119,8 +120,16 @@
 }
 
 .home {
-    .sub-menu {
-        opacity: 1 !important;
-        pointer-events: all !important;
+    .active-on-frontpage {
+        .sub-menu {
+            opacity: 1 !important;
+            pointer-events: all !important;
+        }
     }
 }
+/* .nav-main .menu > li.menu-item-has-children:hover .sub-menu {
+    display: none;
+}
+.nav-main .menu > li.current-menu-item:hover .sub-menu {
+    display: flex;
+} */
