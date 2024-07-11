@@ -51,7 +51,7 @@ body {
 }
 
 .area--sidebar {
-    background-color: var(--color-primary-darker);
+    background-color: var(--color-neutral-light);
 }
 
 .section--footer {
@@ -65,4 +65,5 @@ body {
 }
 
 .section--footer {
+    border-top: var(--border);
 }

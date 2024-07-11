@@ -2,26 +2,38 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .cta {
-    & a {
-        border-radius: var(--border-radius);
-        background-color: var(--color-primary);
-        background: radial-gradient(
-            ellipse at top left,
-            var(--color-primary),
-            var(--color-primary-darker)
-        );
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: grid;
+    place-items: center start;
+    grid-template-columns: max-content min-content;
+    gap: var(--s);
+    width: max-content;
+    height: 2rem;
+    padding-inline: var(--m);
+    text-decoration: inherit;
+    color: inherit;
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary);
+    background: radial-gradient(
+        ellipse at top left,
+        var(--color-primary),
+        var(--color-primary-darker)
+    );
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: var(--color-text-on-primary);
+    transition: all 0.3s;
+    &:hover {
         color: var(--color-text-on-primary);
-        &::after {
-            content: "→";
-            color: var(--color-primary-dark);
-            transform: translateX(0);
-        }
-        &:hover::after {
-            transform: translateX(0.25rem) !important;
-        }
-        &:active::after {
-            transform: translateX(0.5rem) !important;
-        }
+    }
+    &::after {
+        content: "→";
+        color: var(--color-primary-dark);
+        transform: translateX(0);
+        transition: all 0.3s;
+    }
+    &:hover::after {
+        transform: translateX(0.25rem) !important;
+    }
+    &:active::after {
+        transform: translateX(0.5rem) !important;
     }
 }
