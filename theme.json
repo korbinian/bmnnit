@@ -35,7 +35,7 @@
                 },
                 {
                     "slug": "primary",
-                    "color": "red",
+                    "color": "var(--color-primary)",
                     "name": "Primary"
                 }
             ]

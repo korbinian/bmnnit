@@ -26,37 +26,37 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    border-bottom: var(--border);
     .module--branding {
         grid-column: 1 / 4;
-        grid-row: 1/6;
+        grid-row: 1 / 6;
         display: grid;
-        grid-template-columns: 1fr 5rem 5rem;
+        grid-template-columns: subgrid;
         grid-template-rows: subgrid;
-
         & .branding {
-            grid-column: 1 /-1;
+            grid-column: 1 / -1;
             grid-row: 3;
-            padding-left: 2rem;
+            padding-left: var(--l);
         }
     }
-
     .module--nav-main {
-        grid-column: 5/ -4;
+        grid-column: 5/ -2;
         grid-row: 3;
+        padding-right: var(--m);
     }
     .module--widgets-topbar {
-        grid-column: 1/ -4;
+        grid-column: 4 / -2;
         grid-row: 1;
         display: grid;
-        grid-template-columns: 5rem repeat(15, 5rem) 1fr;
+        grid-template-columns: subgrid;
         & > * {
-            grid-column: 5 /-2;
+            grid-column: 2 / -1;
         }
     }
     .module--widgets-topright {
-        grid-column: 14/ -1;
+        grid-column: 17/ -1;
         grid-row: 3;
+        padding-right: var(--m);
+        padding-left: var(--l);
     }
 }
 
@@ -65,7 +65,6 @@ body {
 .section--main {
     position: relative;
     z-index: 1;
-
     min-height: 100vh;
     width: 100%;
     align-items: start;
@@ -100,20 +99,27 @@ body {
         }
     }
     & .area--content {
-        grid-column: 4 / -1;
+        grid-column: 1 / -1;
         display: grid;
-        grid-template-columns: repeat(13, 5rem) 1fr;
+        grid-template-columns: subgrid;
         align-self: stretch;
         & .hentry,
         & .entry-header,
-        & .entry-content,
         & .entry-footer {
             display: grid;
-            grid-template-columns: repeat(13, 5rem) 1fr;
-            grid-column: 1 / -1;
+            grid-template-columns: subgrid;
+            grid-column: 1/-1;
+        }
+        & .entry-content {
+            display: grid;
+            grid-template-columns: subgrid;
+            grid-column: 1/-1;
+            padding-top: var(--l);
+            > * {
+                grid-column: 5 / -6;
+            }
         }
         & .entry-header,
-        & .entry-content,
         & .entry-footer {
             > * {
                 grid-column: 2 / -6;
@@ -129,6 +135,9 @@ body {
 
 .alignfull {
     grid-column: 1 /-1 !important;
+}
+.alignwide {
+    grid-column: 5 /-2 !important;
 }
 
 .home .section--main .area--sidebar {

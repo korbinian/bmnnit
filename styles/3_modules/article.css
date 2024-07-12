@@ -10,8 +10,7 @@
 .entry-header {
     padding-top: 4rem;
     padding-bottom: 2rem;
-    border-left: var(--border);
-    border-bottom: var(--border);
+
     margin-left: calc(var(--border-width) * -1);
     animation-duration: 0.3s;
     animation-name: slidein;
@@ -21,8 +20,6 @@
 }
 
 .entry-content {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 .entry-title {

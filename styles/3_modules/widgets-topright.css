@@ -4,7 +4,6 @@
 .module--widgets-topright {
     display: grid;
     place-items: center end;
-    padding-right: var(--m);
 }
 .widgets-topright {
     display: flex;
