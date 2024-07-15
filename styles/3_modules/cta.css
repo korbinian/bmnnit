@@ -33,3 +33,7 @@
         transform: translateX(0.5rem) !important;
     }
 }
+
+.module--cta {
+    margin-top: auto;
+}

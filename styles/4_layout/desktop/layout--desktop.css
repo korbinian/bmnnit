@@ -44,7 +44,7 @@ body {
         padding-right: var(--m);
     }
     .module--widgets-topbar {
-        grid-column: 4 / -2;
+        grid-column: 4 / 15;
         grid-row: 1;
         display: grid;
         grid-template-columns: subgrid;
@@ -121,6 +121,7 @@ body {
         }
         & .entry-header,
         & .entry-footer {
+            grid-column: 4/-2;
             > * {
                 grid-column: 2 / -6;
             }
