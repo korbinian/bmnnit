@@ -79,7 +79,7 @@
             }
         }
         & .cta {
-            margin-left: auto;
+            margin-left: 2rem;
             z-index: 1;
             position: relative;
         }

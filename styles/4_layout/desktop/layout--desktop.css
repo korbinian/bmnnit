@@ -20,7 +20,7 @@ body {
 /*  HEADER ///////////////////////////////////////////////////////////////////*/
 
 .section--header {
-    grid-template-rows: 2rem 1rem 2rem 2rem calc(1rem - var(--border-width));
+    grid-template-rows: 2rem 1rem 2rem 2rem calc(2rem - var(--border-width));
     z-index: 3;
     position: fixed;
     top: 0;
@@ -28,7 +28,7 @@ body {
     left: 0;
     .module--branding {
         grid-column: 1 / 4;
-        grid-row: 1 / 6;
+        grid-row: 1 / 5;
         display: grid;
         grid-template-columns: subgrid;
         grid-template-rows: subgrid;
@@ -44,7 +44,7 @@ body {
         padding-right: var(--m);
     }
     .module--widgets-topbar {
-        grid-column: 4 / 15;
+        grid-column: 4 / 12;
         grid-row: 1;
         display: grid;
         grid-template-columns: subgrid;

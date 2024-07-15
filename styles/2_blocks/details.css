@@ -4,11 +4,12 @@
 .wp-block-details {
     & summary {
         display: flex;
+        justify-content: space-between;
         gap: var(--s);
         user-select: none;
         font-weight: 500;
         color: var(--color-black);
-        &::before {
+        &::after {
             display: block;
             content: "→";
             font-family: var(--font-stack-inter);

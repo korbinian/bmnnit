@@ -1,6 +1,65 @@
 /*  MODULE: SERVICES
 //////////////////////////////////////////////////////////////////////////////*/
 
+.module--services {
+    margin-bottom: var(--xl);
+    grid-column: 5 /-2 !important;
+    position: relative;
+    .services {
+        display: block;
+        grid-column: span 4;
+        width: 100%;
+    }
+    .service {
+        display: grid;
+        grid-template-columns: subgrid;
+    }
+    .decoration {
+        grid-column: 6 / -3;
+        background: red;
+        width: 100%;
+        aspect-ratio: 1/1;
+        opacity: 0;
+    }
+}
+
+.module--services .service::after {
+    opacity: 0;
+
+    content: "";
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 20rem;
+    transform: translateY(-1rem);
+    transition: transform 0.3s, opacity 0.3s;
+}
+.module--services .service--webentwicklung::after {
+    content: "";
+    background-image: url("../../images/services/service-1.webp");
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: top right;
+    mix-blend-mode: multiply;
+}
+.module--services .service--webdesign::after {
+    content: "";
+    background-image: url("../../images/services/service-2.webp");
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: top right;
+    mix-blend-mode: multiply;
+}
+.module--services:has(.service--webentwicklung:hover) .service--webentwicklung::after,
+.module--services:has(.service--webdesign:hover) .service--webdesign::after {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* 
 .services {
     margin-bottom: var(--xl);
     border-radius: var(--border-radius);
@@ -41,4 +100,4 @@
 
 .services details[open] summary {
     margin-bottom: 1rem;
-}
+} */
