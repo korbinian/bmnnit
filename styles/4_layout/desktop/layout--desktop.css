@@ -70,7 +70,7 @@ body {
     align-items: start;
     & .area--content,
     & .area--sidebar {
-        margin-top: 8rem;
+        margin-top: 9rem;
     }
 
     & .reference-list {
