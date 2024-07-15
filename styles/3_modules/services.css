@@ -14,13 +14,13 @@
         display: grid;
         grid-template-columns: subgrid;
     }
-    .decoration {
+    /* .decoration {
         grid-column: 6 / -3;
         background: red;
         width: 100%;
         aspect-ratio: 1/1;
         opacity: 0;
-    }
+    } */
 }
 
 .module--services .service::after {
@@ -32,8 +32,8 @@
     position: absolute;
     top: 0;
     z-index: -1;
-    right: 20rem;
-    transform: translateY(-1rem);
+    right: 15rem;
+    transform: translateY(-10rem);
     transition: transform 0.3s, opacity 0.3s;
 }
 .module--services .service--webentwicklung::after {
@@ -55,7 +55,7 @@
 .module--services:has(.service--webentwicklung:hover) .service--webentwicklung::after,
 .module--services:has(.service--webdesign:hover) .service--webdesign::after {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-9rem);
     transition: transform 0.3s, opacity 0.3s;
 }
 
