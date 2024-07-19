@@ -21,7 +21,7 @@
 			<address>
 				<b>Johannes Baumann IT-Dienstleistungen</b>
 				<span class="has-icon has-icon--location">Marktplatz 8 83530 Schnaitsee</span>
-				<span class="has-icon has-icon--phone"><a href="tel:+4980715272504">+49 8071 5272504</a></span>
+				<span class="has-icon has-icon--phone"><a href="tel:+4980742609860">+49 8074 2609860</a></span>
 			</address>
 		</div>
 	</div>
