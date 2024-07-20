@@ -15,32 +15,36 @@
 		<?php if ( is_front_page() ) { ?>
 		<div class="module module--branding animated">
 			<div class="branding">
-				<h1 class="branding__title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">~/<b id="element"></b></a>
-				</h1>
-					<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-					<script>
-						var typed = new Typed('#element', {  
-						strings: ['bmnn<b>IT</b>'],
-						typeSpeed: 20,
-						shuffle: false,
-						loop: false,
-						backDelay: 2000,
-						showCursor: true,
-						cursorChar: '&#9616;',
-						});
-					</script>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="branding__link">
+					<h1 class="branding__title">
+						~/<span id="element"></span>
+					</h1>
+						<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+						<script>
+							var typed = new Typed('#element', {  
+							strings: ['bmnnIT'],
+							typeSpeed: 20,
+							shuffle: false,
+							loop: false,
+							backDelay: 2000,
+							showCursor: true,
+							cursorChar: '&#9616;',
+							});
+						</script>
 
-				<div class="branding__tagline">Baumann IT-Dienstleistungen</div>
+					<div class="branding__tagline">Baumann IT-Dienstleistungen</div>
+				</a>
 			</div>
 		</div>
 		<?php } else { ?>
-			<div class="module module--branding">
+		<div class="module module--branding">
 			<div class="branding">
-				<h1 class="branding__title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">~/<b>bmnn<b>IT</b></b></a>
-				</h1>
-				<div class="branding__tagline">Baumann IT-Dienstleistungen</div>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<h1 class="branding__title">
+						~/<span>bmnnIT</span></b>
+					</h1>
+					<div class="branding__tagline">Baumann IT-Dienstleistungen</div>
+				</a>
 			</div>
 		</div>
     	<?php } ?>

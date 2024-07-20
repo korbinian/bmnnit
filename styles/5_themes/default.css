@@ -41,8 +41,10 @@ body {
     backdrop-filter: grayscale(1);
     z-index: -1;
     backdrop-filter: blur(5px);
-    soutline: var(--border);
-    soutline-offset: -1px;
+}
+
+.module--branding {
+    background-color: var(--color-blue-900);
 }
 
 .section--main {

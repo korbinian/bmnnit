@@ -15,13 +15,6 @@
         display: grid;
         grid-template-columns: subgrid;
     }
-    /* .decoration {
-        grid-column: 6 / -3;
-        background: red;
-        width: 100%;
-        aspect-ratio: 1/1;
-        opacity: 0;
-    } */
 }
 
 .module--services .service::after {
@@ -39,7 +32,7 @@
 }
 .module--services .service--webentwicklung::after {
     content: "";
-    background-image: url("../../images/services/service-1.webp");
+    background-image: url("../../../images/services/service-1.webp");
     background-repeat: no-repeat;
     background-size: 20rem;
     background-position: top right;
@@ -47,7 +40,7 @@
 }
 .module--services .service--webdesign::after {
     content: "";
-    background-image: url("../../images/services/service-2.webp");
+    background-image: url("../../../images/services/service-2.webp");
     background-repeat: no-repeat;
     background-size: 20rem;
     background-position: top right;
@@ -59,46 +52,3 @@
     transform: translateY(-9rem);
     transition: transform 0.3s, opacity 0.3s;
 }
-
-/* 
-.services {
-    margin-bottom: var(--xl);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-}
-
-.services > * {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
-}
-.services details[open] {
-    padding-bottom: 1rem;
-}
-.services summary {
-    padding: 0.25rem 1rem;
-    background-color: color-mix(in oklab, var(--color-neutral), white 80%);
-    color: var(--color-text-dark);
-
-    &:hover {
-    }
-    &::before {
-        order: 2;
-        margin-left: auto;
-        color: var(--color-highlight-light);
-    }
-    &:hover::before {
-        transform: rotate(90deg);
-        transition: transform 0.3s;
-    }
-
-    + * {
-        padding-inline: 1rem;
-        font-size: var(--font-size-s);
-        line-height: var(--line-height-s);
-    }
-}
-
-.services details[open] summary {
-    margin-bottom: 1rem;
-} */

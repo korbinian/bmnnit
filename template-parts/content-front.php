@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class($css_class = 'article article--front'); ?>>
 
 	<?php bmnnit_post_thumbnail(); ?>
 

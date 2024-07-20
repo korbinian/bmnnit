@@ -1,28 +1,12 @@
 <?php
-
-/**
- * Template part for displaying a refernce
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package bmnnit
- * @author yo
- */
-
-?>
-
-
-<?php
-
     $id = get_the_ID();
     $project_url = get_field('project_url',  $id); 
 	$project_arbeitstage = get_field('project_arbeitstage',  $id); 
 	$project_mitarbeiter = get_field('project_mitarbeiter',  $id); 
-
 ?>
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class($css_class = 'article article--project'); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header>

@@ -39,27 +39,27 @@
 //	MODULES
 //////////////////////////////////////////////////////////////////////////////*/
 
-@import "3_modules/branding.css";
-@import "3_modules/nav-main.css";
-@import "3_modules/nav-sidebar.css";
-@import "3_modules/nav-footer.css";
-@import "3_modules/sidebar.css";
-@import "3_modules/widgets.css";
-@import "3_modules/widgets-topbar.css";
-@import "3_modules/widgets-topright.css";
-@import "3_modules/widgets-footer.css";
-@import "3_modules/contactbar.css";
-@import "3_modules/article.css";
-@import "3_modules/posts.css";
-@import "3_modules/post.css";
-@import "3_modules/post-navigation.css";
-@import "3_modules/intro.css";
-@import "3_modules/searchbar.css";
-@import "3_modules/services.css";
-@import "3_modules/meta.css";
-@import "3_modules/cta.css";
-@import "3_modules/page-title.css";
-@import "3_modules/projects.css";
+@import "3_modules/branding/branding.css";
+
+@import "3_modules/nav/nav-main.css";
+@import "3_modules/nav/nav-sidebar.css";
+@import "3_modules/nav/nav-footer.css";
+
+@import "3_modules/widgets/widgets.css";
+@import "3_modules/widgets/widgets-topbar.css";
+@import "3_modules/widgets/widgets-topright.css";
+@import "3_modules/widgets/widgets-footer.css";
+
+@import "3_modules/article/article--default.css";
+@import "3_modules/article/page-title.css";
+
+@import "3_modules/contactbar/contactbar.css";
+
+@import "3_modules/search/searchbar.css";
+
+@import "3_modules/services/services.css";
+
+@import "3_modules/cta/cta.css";
 
 /*/ /////////////////////////////////////////////////////////////////////////////
 //	LAYOUT
@@ -120,7 +120,6 @@
 .logged-in .section--header {
     top: 32px;
 }
-
 .home {
     .active-on-frontpage {
         .sub-menu {
