@@ -129,3 +129,14 @@
         }
     }
 }
+
+.team {
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content;
+    height: 100%;
+}
+
+.team .post-thumbnail {
+    grid-column: 4 / 8 !important;
+    grid-row: 2;
+}

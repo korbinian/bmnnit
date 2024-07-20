@@ -9,6 +9,7 @@
         display: block;
         grid-column: span 4;
         width: 100%;
+        position: static;
     }
     .service {
         display: grid;

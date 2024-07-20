@@ -105,7 +105,8 @@ body {
         align-self: stretch;
         & .hentry,
         & .entry-header,
-        & .entry-footer {
+        & .entry-footer,
+        & .post-navigation {
             display: grid;
             grid-template-columns: subgrid;
             grid-column: 1/-1;
@@ -170,7 +171,7 @@ body {
         grid-column: 5 / -5;
         grid-row: 1;
     }
-    > .module--contactbar {
+    > .module--widgets {
         grid-column: 5 / -5;
         grid-row: 2;
     }
