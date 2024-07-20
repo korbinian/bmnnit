@@ -1,8 +1,8 @@
 /*  THEME: CATEGORIE 4
 //////////////////////////////////////////////////////////////////////////////*/
 
-body:has(.theme--4.current-menu-item),
-body:has(.theme--4:hover) {
+body:has(#nav-main .theme--4:hover),
+body:has(.theme--4.current-menu-item) {
     --color-neutral: var(--color-grey-200);
     --color-neutral-lighter: var(--color-grey-100);
     --color-neutral-light: var(--color-grey-50);
@@ -25,14 +25,6 @@ body:has(.theme--4:hover) {
     --color-text-on-primary: var(--color-primary-light);
     --color-text-on-secondary: var(--color-secondary-light);
 
-    --color-transparent-light: color-mix(
-        in oklab,
-        var(--color-secondary),
-        transparent 60%
-    );
-    --color-transparent-dark: color-mix(
-        in oklab,
-        var(--color-secondary-dark),
-        transparent 20%
-    );
+    --color-transparent-light: color-mix(in oklab, var(--color-secondary), transparent 60%);
+    --color-transparent-dark: color-mix(in oklab, var(--color-secondary-dark), transparent 20%);
 }

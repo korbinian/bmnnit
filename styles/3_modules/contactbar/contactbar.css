@@ -33,18 +33,18 @@
         }
     }
     .has-icon--location::before {
-        background-image: url("../../images/icons/icon--location.svg");
+        background-image: url("../../../images/icons/icon--location.svg");
     }
     .has-icon--phone::before {
-        background-image: url("../../images/icons/icon--phone.svg");
+        background-image: url("../../../images/icons/icon--phone.svg");
     }
 }
 
 .section--footer .contactbar {
     .has-icon--location::before {
-        background-image: url("../../images/icons/icon--location--black.svg");
+        background-image: url("../../../images/icons/icon--location--black.svg");
     }
     .has-icon--phone::before {
-        background-image: url("../../images/icons/icon--phone--black.svg");
+        background-image: url("../../../images/icons/icon--phone--black.svg");
     }
 }

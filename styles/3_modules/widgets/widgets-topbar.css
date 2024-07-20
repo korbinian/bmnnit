@@ -5,9 +5,8 @@
     font-size: var(--font-size-xs);
     line-height: 2rem;
     font-weight: 500;
-    font-family: var(--font-stack-inter);
     font-family: var(--font-family-copy);
-    background-color: var(--color-blue-900);
+
     color: #fff;
 }
 .widgets-topbar {

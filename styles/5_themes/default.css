@@ -1,8 +1,8 @@
 /*  THEME: DEFAULT
 //////////////////////////////////////////////////////////////////////////////*/
 
-body:has(.theme--default.current-menu-item),
 body:has(.theme--default:hover),
+body:has(.theme--default.current-menu-item),
 body {
     --color-neutral: var(--color-grey-200);
     --color-neutral-lighter: var(--color-grey-100);
@@ -30,46 +30,49 @@ body {
     --color-transparent-dark: color-mix(in oklab, var(--color-secondary-dark), transparent 20%);
 }
 
-.section--header {
-}
-.section--header::before {
-    content: "";
-    grid-column: 1 /-2;
-    grid-row: 1/6;
-    background: rgba(255, 255, 255, 0.9);
-    background: var(--color-transparent-dark);
-    backdrop-filter: grayscale(1);
-    z-index: -1;
-    backdrop-filter: blur(5px);
+/*  HEADER ///////////////////////////////////////////////////////////////////*/
+
+body {
 }
 
-.module--branding {
-    background-color: var(--color-blue-900);
+.section--header {
+    &::before {
+        content: "";
+        grid-column: 1 /-2;
+        grid-row: 1/6;
+        background: var(--color-transparent-dark);
+        backdrop-filter: grayscale(1);
+        z-index: -1;
+        backdrop-filter: blur(5px);
+    }
+    .module--widgets-topbar {
+        background-color: var(--color-blue-900);
+    }
+    .module--branding {
+        background-color: var(--color-blue-900);
+    }
 }
+
+/*  MAIN /////////////////////////////////////////////////////////////////////*/
 
 .section--main {
     background-color: var(--color-white);
-    background-color: var(--color-neutral-light);
 }
 
-.area--sidebar {
-    background-color: rgba(255, 255, 255, 0.85);
+.entry-header {
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
 }
+.area--content {
+    background: var(--color-neutral-light);
+}
+
+/*  FOOTER ///////////////////////////////////////////////////////////////////*/
+
 .section--footer {
     font-size: var(--font-size-s);
     line-height: var(--line-height-s);
     & * {
         color: inherit;
     }
-}
-
-.section--footer {
-    sborder-top: var(--border);
-}
-
-.entry-header {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: grayscale(1);
-    backdrop-filter: blur(5px);
 }
