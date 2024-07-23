@@ -69,6 +69,10 @@ body {
             grid-template-rows: min-content;
             grid-column: 1 / -1;
         }
+        .post-navigation {
+            grid-column: 5 / -2;
+            padding-block: var(--m);
+        }
         .entry-content,
         .entry-header {
             display: grid;

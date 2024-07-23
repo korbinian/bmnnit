@@ -10,6 +10,15 @@ ul {
     padding-left: 1rem;
 }
 
+.article {
+    ul,
+    ol {
+        display: flex;
+        flex-direction: column;
+        gap: var(--xs);
+    }
+}
+
 ul ul {
     padding-left: 0;
     list-style: circle;

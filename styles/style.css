@@ -50,8 +50,9 @@
 @import "3_modules/widgets/widgets-topright.css";
 @import "3_modules/widgets/widgets-footer.css";
 
-@import "3_modules/article/article--default.css";
+@import "3_modules/article/article.css";
 @import "3_modules/article/page-title.css";
+@import "3_modules/article/post-navigation.css";
 
 @import "3_modules/contactbar/contactbar.css";
 
@@ -127,15 +128,4 @@
             pointer-events: all !important;
         }
     }
-}
-
-.team {
-    display: grid;
-    grid-template-rows: min-content min-content min-content min-content;
-    height: 100%;
-}
-
-.team .post-thumbnail {
-    grid-column: 4 / 8 !important;
-    grid-row: 2;
 }

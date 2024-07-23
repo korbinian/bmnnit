@@ -80,10 +80,7 @@ add_action( 'widgets_init', 'fundus_widgets_init' );
 
 function bmnnit_scripts() {
 	wp_enqueue_style('main-styles', get_template_directory_uri() . '/styles/style.css', array(), filemtime(get_template_directory() . '/styles/style.css') );
-	wp_enqueue_style('mobile-styles', get_template_directory_uri() . '/styles/mobile.css', array(), filemtime(get_template_directory() . '/styles/mobile.css'), '(width <= 640px)' );
-	wp_enqueue_style('tablet-styles', get_template_directory_uri() . '/styles/tablet.css', array(), filemtime(get_template_directory() . '/styles/tablet.css'), '(640px <= width <= 1360px)');
-	wp_enqueue_style('desktop-styles', get_template_directory_uri() . '/styles/desktop.css', array(), filemtime(get_template_directory() . '/styles/desktop.css'), '(width >= 1360px)');
-	
+
 	wp_enqueue_script( 'comment-reply' );
 	wp_enqueue_script( 'bmnnit-jquery', get_template_directory_uri() . '/scripts/jquery-3.7.1.slim.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'bmnnit-slider', get_template_directory_uri() . '/scripts/slick.min.js', array(), _S_VERSION, true );

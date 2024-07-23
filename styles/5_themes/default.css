@@ -1,9 +1,9 @@
 /*  THEME: DEFAULT
 //////////////////////////////////////////////////////////////////////////////*/
 
-body:has(.theme--default:hover),
-body:has(.theme--default.current-menu-item),
-body {
+html:has(.theme--default:hover),
+html:has(.theme--default.current-menu-item),
+html {
     --color-neutral: var(--color-grey-200);
     --color-neutral-lighter: var(--color-grey-100);
     --color-neutral-light: var(--color-grey-50);
@@ -36,6 +36,7 @@ body {
 }
 
 .section--header {
+    background: var(--color-neutral-light);
     &::before {
         content: "";
         grid-column: 1 /-2;
@@ -57,6 +58,7 @@ body {
 
 .section--main {
     background-color: var(--color-white);
+    color: var(--color-secondary-dark);
 }
 
 .entry-header {
@@ -72,6 +74,7 @@ body {
 .section--footer {
     font-size: var(--font-size-s);
     line-height: var(--line-height-s);
+    color: var(--color-secondary-dark);
     & * {
         color: inherit;
     }

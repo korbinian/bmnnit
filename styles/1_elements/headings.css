@@ -47,7 +47,6 @@ h6 {
     font-size: inherit;
     line-height: inherit;
     font-weight: 700;
-    color: var(--color-secondary-dark);
 }
 
 h1:has(+ h2) {

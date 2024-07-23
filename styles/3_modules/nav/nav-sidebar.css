@@ -5,8 +5,9 @@
     line-height: 1.2;
     ul {
         display: flex;
-        flex-direction: column;
-        gap: var(--s);
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: var(--m);
     }
     a {
         text-decoration: none;
@@ -15,7 +16,7 @@
         transition: transform 0.3s;
         color: inherit;
         &:hover {
-            transform: translateX(0.25rem);
+            transform: translateY(-0.15rem);
             transition: transform 0.3s;
         }
     }
@@ -26,7 +27,6 @@
         opacity: 1;
     }
     .sub-menu {
-        margin-top: var(--s);
         opacity: 0.6;
     }
 }
@@ -38,6 +38,8 @@
 .module--nav-sidebar .menu {
     .current-menu-item,
     .current-menu-ancestor {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--l);
     }
 }

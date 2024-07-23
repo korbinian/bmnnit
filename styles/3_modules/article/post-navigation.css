@@ -3,7 +3,8 @@
     & .nav-links {
         grid-column: 5 /-5;
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
+        gap: var(--l);
     }
     & .nav-previous a,
     & .nav-next a {
