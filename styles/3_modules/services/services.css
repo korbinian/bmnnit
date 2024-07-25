@@ -6,8 +6,9 @@
     grid-column: 5 /-2 !important;
     position: relative;
     .services {
-        display: block;
-        grid-column: span 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column: span 8;
         width: 100%;
         position: static;
     }
@@ -26,30 +27,49 @@
     position: absolute;
     top: 0;
     /* z-index: -1; */
-    right: 15rem;
-    transform: translateY(-10rem);
+    left: -40rem;
+    transform: translateY(-7rem);
     transition: transform 0.3s, opacity 0.3s;
     pointer-events: none;
 }
-.module--services .service--webentwicklung::after {
+.module--services .service::after {
     content: "";
-    background-image: url("../../../images/services/service-1.webp");
     background-repeat: no-repeat;
     background-size: 20rem;
     background-position: top right;
     mix-blend-mode: multiply;
 }
-.module--services .service--webdesign::after {
-    content: "";
-    background-image: url("../../../images/services/service-2.webp");
-    background-repeat: no-repeat;
-    background-size: 20rem;
-    background-position: top right;
-    mix-blend-mode: multiply;
+
+.module--services .service--1::after {
+    background-image: url("../../../images/services/1.png");
 }
-.module--services:has(.service--webentwicklung:hover) .service--webentwicklung::after,
-.module--services:has(.service--webdesign:hover) .service--webdesign::after {
+.module--services .service--2::after {
+    background-image: url("../../../images/services/2.png");
+}
+.module--services .service--3::after {
+    background-image: url("../../../images/services/3.png");
+}
+.module--services .service--4::after {
+    background-image: url("../../../images/services/4.png");
+}
+.module--services .service--5::after {
+    background-image: url("../../../images/services/5.png");
+}
+.module--services .service--6::after {
+    background-image: url("../../../images/services/6.png");
+}
+.module--services .service--7::after {
+    background-image: url("../../../images/services/7.png");
+}
+
+.module--services:has(.service--1:hover) .service--1::after,
+.module--services:has(.service--2:hover) .service--2::after,
+.module--services:has(.service--3:hover) .service--3::after,
+.module--services:has(.service--4:hover) .service--4::after,
+.module--services:has(.service--5:hover) .service--5::after,
+.module--services:has(.service--6:hover) .service--6::after,
+.module--services:has(.service--7:hover) .service--7::after {
     opacity: 1;
-    transform: translateY(-9rem);
+    transform: translateY(-6rem);
     transition: transform 0.3s, opacity 0.3s;
 }

@@ -17,8 +17,7 @@
     font-weight: 100 900;
     font-style: normal;
     font-display: block;
-    src: url("../../fonts/Fira_Code/FiraCode-VariableFont_wght.ttf")
-        format("truetype");
+    src: url("../../fonts/Fira_Code/FiraCode-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
     font-family: "Fira Sans";
@@ -47,16 +46,14 @@
     font-style: normal;
     font-display: block;
     font-weight: 400;
-    src: url("../../fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf")
-        format("truetype");
+    src: url("../../fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "Fira Sans Condensed";
     font-style: normal;
     font-display: block;
     font-weight: 500;
-    src: url("../../fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf")
-        format("truetype");
+    src: url("../../fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -72,8 +69,7 @@
     font-weight: 100 900;
     font-style: normal;
     font-display: block;
-    src: url("../../fonts/space-grotesk/SpaceGrotesk-VariableFont_wght.ttf")
-        format("truetype");
+    src: url("../../fonts/space-grotesk/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
@@ -96,10 +92,8 @@
     font-weight: 100 900;
     font-style: normal;
     font-display: block;
-    src: url("../../fonts/satoshi/Satoshi-Variable.woff2")
-        format("woff2-variations");
-    src: url("../../fonts/satoshi/Satoshi-Variable.woff2") format("woff2")
-        tech("variations");
+    src: url("../../fonts/satoshi/Satoshi-Variable.woff2") format("woff2-variations");
+    src: url("../../fonts/satoshi/Satoshi-Variable.woff2") format("woff2") tech("variations");
 }
 
 @font-face {
@@ -107,10 +101,8 @@
     font-weight: 100 900;
     font-style: italic;
     font-display: block;
-    src: url("../../fonts/satoshi/Satoshi-VariableItalic.woff2")
-        format("woff2-variations");
-    src: url("../../fonts/satoshi/Satoshi-VariableItalic.woff2") format("woff2")
-        tech("variations");
+    src: url("../../fonts/satoshi/Satoshi-VariableItalic.woff2") format("woff2-variations");
+    src: url("../../fonts/satoshi/Satoshi-VariableItalic.woff2") format("woff2") tech("variations");
 }
 
 @font-face {
@@ -118,10 +110,8 @@
     font-weight: 100 900;
     font-style: normal;
     font-display: block;
-    src: url("../../fonts/pilcrowRounded/PilcrowRounded-Variable.woff2")
-        format("woff2-variations");
-    src: url("../../fonts/pilcrowRounded/PilcrowRounded-Variable.woff2")
-        format("woff2") tech("variations");
+    src: url("../../fonts/pilcrowRounded/PilcrowRounded-Variable.woff2") format("woff2-variations");
+    src: url("../../fonts/pilcrowRounded/PilcrowRounded-Variable.woff2") format("woff2") tech("variations");
 }
 
 /* @font-face {
@@ -149,8 +139,7 @@
     font-style: normal;
     font-weight: 300;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-Light.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -158,8 +147,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -167,16 +155,14 @@
     font-style: normal;
     font-weight: 500;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf") format("truetype");
 }
 @font-face {
     font-family: "Plex Mono";
     font-style: normal;
     font-weight: 600;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
@@ -184,8 +170,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -193,8 +178,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Bold.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -202,8 +186,7 @@
     font-style: normal;
     font-weight: 600;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-SemiBold.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
@@ -211,8 +194,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Medium.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -220,16 +202,14 @@
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Regular.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "Plex Sans Condensed";
     font-style: normal;
     font-weight: 300;
     font-display: block;
-    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Light.ttf")
-        format("truetype");
+    src: url("../../fonts/IBM_Plex_Sans_Condensed/IBMPlexSansCondensed-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -238,8 +218,7 @@
     font-style: normal;
     font-display: block;
     src: url("../../fonts/inter/Inter-var.woff2") format("woff2-variations");
-    src: url("../../fonts/inter/Inter-var.woff2") format("woff2")
-        tech("variations");
+    src: url("../../fonts/inter/Inter-var.woff2") format("woff2") tech("variations");
 }
 
 @font-face {
@@ -247,10 +226,8 @@
     font-weight: 100 900;
     font-style: italic;
     font-display: block;
-    src: url("../../fonts/inter/Inter-italic-var.woff2")
-        format("woff2-variations");
-    src: url("../../fonts/inter/Inter-italic-var.woff2") format("woff2")
-        tech("variations");
+    src: url("../../fonts/inter/Inter-italic-var.woff2") format("woff2-variations");
+    src: url("../../fonts/inter/Inter-italic-var.woff2") format("woff2") tech("variations");
 }
 
 @font-face {
@@ -258,8 +235,7 @@
     font-weight: 100 900;
     font-style: normal;
     font-display: block;
-    src: url("../../fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf")
-        format("truetype");
+    src: url("../../fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
 }
 
 @font-face {
@@ -267,8 +243,7 @@
     font-weight: 100 900;
     font-style: normal;
     font-display: block;
-    src: url("../../fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ,wght.ttf")
-        format("truetype");
+    src: url("../../fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ,wght.ttf") format("truetype");
 }
 @font-face {
     font-family: "Jost";
@@ -310,8 +285,7 @@
     font-style: normal;
     font-weight: 200;
     font-display: block;
-    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-ExtraLight.ttf")
-        format("truetype");
+    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-ExtraLight.ttf") format("truetype");
 }
 
 @font-face {
@@ -319,8 +293,7 @@
     font-style: normal;
     font-weight: 300;
     font-display: block;
-    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-Light.ttf")
-        format("truetype");
+    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -328,8 +301,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: block;
-    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf")
-        format("truetype");
+    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -337,16 +309,14 @@
     font-style: normal;
     font-weight: 500;
     font-display: block;
-    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-Medium.ttf")
-        format("truetype");
+    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-Medium.ttf") format("truetype");
 }
 @font-face {
     font-family: "bj";
     font-style: normal;
     font-weight: 600;
     font-display: block;
-    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf")
-        format("truetype");
+    src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
@@ -355,4 +325,12 @@
     font-weight: 700;
     font-display: block;
     src: url("../../fonts/Bai_Jamjuree/BaiJamjuree-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "blokk";
+    font-style: normal;
+
+    font-display: block;
+    src: url("../../fonts/blokk/BLOKKNeue-Regular.woff2") format("woff2");
 }

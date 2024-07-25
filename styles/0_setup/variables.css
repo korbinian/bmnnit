@@ -17,11 +17,13 @@
     --font-stack-fira-code: "Fira Code", sans-serif;
     --font-stack-fira-sans: "Fira Sans", sans-serif;
     --font-stack-fira-sans-condensed: "Fira Sans Condensed", sans-serif;
+    --font-stack-blokk: "blokk", sans-serif;
 
     --font-family-copy: var(--font-stack-fira-sans);
     --font-family-nav: var(--font-stack-fira-sans-condensed);
     --font-family-display: var(--font-stack-fira-sans);
     --font-family-mono: var(--font-stack-fira-code);
+    --font-family-code: var(--font-stack-blokk);
 
     /* FONT SIZES ////////////////////////////////////////////////////////////*/
 

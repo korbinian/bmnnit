@@ -36,8 +36,8 @@ body {
 }
 
 .section--header {
-    background: var(--color-neutral-light);
-    &::before {
+    /* background: var(--color-neutral-light); */
+    /* &::before {
         content: "";
         grid-column: 1 /-2;
         grid-row: 1/6;
@@ -45,7 +45,7 @@ body {
         backdrop-filter: grayscale(1);
         z-index: -1;
         backdrop-filter: blur(5px);
-    }
+    } */
     .module--widgets-topbar {
         background-color: var(--color-blue-900);
     }
@@ -65,9 +65,9 @@ body {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
 }
-.area--content {
+/* .area--content {
     background: var(--color-neutral-light);
-}
+} */
 
 /*  FOOTER ///////////////////////////////////////////////////////////////////*/
 
@@ -75,7 +75,8 @@ body {
     font-size: var(--font-size-s);
     line-height: var(--line-height-s);
     color: var(--color-secondary-dark);
+    background-color: var(--color-grey-100);
     & * {
-        color: inherit;
+        color: inherit !important;
     }
 }

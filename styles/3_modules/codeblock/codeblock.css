@@ -1,0 +1,9 @@
+.module--codeblock {
+    font-family: var(--font-family-code);
+}
+
+.codeblock {
+    * {
+        font: inherit;
+    }
+}

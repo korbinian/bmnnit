@@ -4,11 +4,10 @@
 .wp-block-details {
     & summary {
         display: flex;
-        justify-content: space-between;
-        gap: var(--s);
+        /* justify-content: space-between; */
+        gap: var(--m);
         user-select: none;
         font-weight: 500;
-        color: var(--color-black);
         &::after {
             display: block;
             content: "→";
@@ -16,6 +15,10 @@
             font-weight: 600;
             color: var(--color-dark);
             transform: translateX(0);
+            transition: transform 0.3s;
+        }
+        &:hover::after {
+            transform: translateX(0.5rem);
             transition: transform 0.3s;
         }
     }
