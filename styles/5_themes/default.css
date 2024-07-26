@@ -1,54 +1,128 @@
 /*  THEME: DEFAULT
 //////////////////////////////////////////////////////////////////////////////*/
 
-html:has(.theme--default:hover),
 html:has(.theme--default.current-menu-item),
 html {
-    --color-neutral: var(--color-grey-200);
-    --color-neutral-lighter: var(--color-grey-100);
-    --color-neutral-light: var(--color-grey-50);
-    --color-neutral-dark: var(--color-grey-900);
-
     --color-primary: var(--color-green-500);
-    --color-primary-lighter: var(--color-green-400);
-    --color-primary-light: var(--color-green-50);
-    --color-primary-darker: var(--color-green-600);
-    --color-primary-dark: var(--color-green-900);
+    --color-primary-dark: var(--color-green-950);
+}
 
-    --color-secondary: var(--color-teal-500);
-    --color-secondary-lighter: var(--color-teal-400);
-    --color-secondary-light: var(--color-teal-50);
-    --color-secondary-darker: var(--color-teal-600);
-    --color-secondary-dark: var(--color-teal-900);
+/*  THEME: RED
+//////////////////////////////////////////////////////////////////////////////*/
 
-    --color-text-light: var(--color-neutral-light);
-    --color-text-dark: var(--color-neutral-dark);
-    --color-text-on-primary: var(--color-primary-light);
-    --color-text-on-secondary: var(--color-secondary-dark);
+body:has(.theme--red.current-menu-item) {
+    --color-primary: var(--color-red-500);
+    --color-primary-dark: var(--color-red-950);
+}
 
-    --color-transparent-light: color-mix(in oklab, var(--color-secondary), transparent 60%);
-    --color-transparent-dark: color-mix(in oklab, var(--color-secondary-dark), transparent 20%);
+/*  THEME: ORANGE
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--orange.current-menu-item) {
+    --color-primary: var(--color-orange-500);
+    --color-primary-dark: var(--color-orange-950);
+}
+
+/*  THEME: YELLOW
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--yellow.current-menu-item) {
+    --color-primary: var(--color-yellow-500);
+    --color-primary-dark: var(--color-yellow-950);
+}
+
+/*  THEME: GREEN
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--green.current-menu-item) {
+    --color-primary: var(--color-green-500);
+    --color-primary-dark: var(--color-green-950);
+}
+
+/*  THEME: LIME
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--lime.current-menu-item) {
+    --color-primary: var(--color-lime-500);
+    --color-primary-dark: var(--color-lime-950);
+}
+
+/*  THEME: CYAN
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--cyan.current-menu-item) {
+    --color-primary: var(--color-cyan-500);
+    --color-primary-dark: var(--color-cyan-950);
+}
+
+/*  THEME: TEAL
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--teal.current-menu-item) {
+    --color-primary: var(--color-teal-500);
+    --color-primary-dark: var(--color-teal-950);
+}
+
+/*  THEME: BLUE
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--blue.current-menu-item) {
+    --color-primary: var(--color-blue-500);
+    --color-primary-dark: var(--color-blue-950);
+}
+
+/*  THEME: INDIGO
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--indigo.current-menu-item) {
+    --color-primary: var(--color-indigo-500);
+    --color-primary-dark: var(--color-indigo-950);
+}
+
+.nav-main .menu .theme--indigo.current-menu-item > a {
+    color: color-mix(in oklab, var(--color-primary), white 90%);
+}
+
+.nav-main .menu .theme--blue.current-menu-item > a {
+    color: color-mix(in oklab, var(--color-primary), white 90%);
+}
+
+/*  THEME: PURPLE
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--purple.current-menu-item) {
+    --color-primary: var(--color-purple-500);
+    --color-primary-dark: var(--color-purple-950);
+}
+
+.nav-main .menu .theme--purple.current-menu-item > a {
+    color: color-mix(in oklab, var(--color-primary), white 90%);
+}
+
+/*  THEME: PINK
+//////////////////////////////////////////////////////////////////////////////*/
+
+body:has(.theme--pink.current-menu-item) {
+    --color-primary: var(--color-pink-500);
+    --color-primary-dark: var(--color-pink-950);
 }
 
 /*  HEADER ///////////////////////////////////////////////////////////////////*/
 
 body {
+    color: var(--color-primary-dark);
+    background-color: var(--color-grey-100);
 }
 
 .section--header {
-    /* background: var(--color-neutral-light); */
-    /* &::before {
+    &::before {
         content: "";
-        grid-column: 1 /-2;
+        grid-column: 1 /-1;
         grid-row: 1/6;
-        background: var(--color-transparent-dark);
-        backdrop-filter: grayscale(1);
+        background: rgba(255, 255, 255, 0.9);
         z-index: -1;
-        backdrop-filter: blur(5px);
-    } */
-    .module--widgets-topbar {
-        background-color: var(--color-blue-900);
     }
+    .module--widgets-topbar,
     .module--branding {
         background-color: var(--color-blue-900);
     }
@@ -57,25 +131,28 @@ body {
 /*  MAIN /////////////////////////////////////////////////////////////////////*/
 
 .section--main {
-    background-color: var(--color-white);
-    color: var(--color-secondary-dark);
+    background-color: var(--color-grey-50);
 }
 
 .entry-header {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
 }
-/* .area--content {
-    background: var(--color-neutral-light);
-} */
+
+.module--cta a {
+    color: color-mix(in oklab, var(--color-primary), white 80%);
+    background-color: color-mix(in oklab, var(--color-primary), black 20%);
+    &:hover {
+        background-color: color-mix(in oklab, var(--color-primary), black 30%);
+        &::after {
+            color: color-mix(in oklab, var(--color-primary), white 90%);
+        }
+    }
+}
 
 /*  FOOTER ///////////////////////////////////////////////////////////////////*/
 
 .section--footer {
-    font-size: var(--font-size-s);
-    line-height: var(--line-height-s);
-    color: var(--color-secondary-dark);
-    background-color: var(--color-grey-100);
     & * {
         color: inherit !important;
     }

@@ -1,11 +1,6 @@
 /*  MODULE: NAV FOOTER
 //////////////////////////////////////////////////////////////////////////////*/
 
-.module--nav-footer {
-    font-family: var(--font-stack-plex-sans-condensed);
-    font-weight: 500;
-}
-
 .nav-footer {
     margin-left: calc(var(--s) * -1);
     a {
@@ -13,7 +8,7 @@
         outline-color: var(--color-grey-200);
         padding: var(--xs) var(--s);
         &:hover {
-            outline: var(--border);
+            outline: 1px solid var(--color-grey-200);
         }
     }
     & .menu {
@@ -21,8 +16,5 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: var(--xs) var(--s);
-    }
-    & .sub-menu {
-        /* display: none; */
     }
 }

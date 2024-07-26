@@ -18,9 +18,10 @@
     vertical-align: inherit;
 }
 
-/* html {
-    scrollbar-gutter: stable;
-} */
+html,
+body {
+    height: 100%;
+}
 
 body {
     scroll-behavior: smooth;
@@ -44,4 +45,8 @@ summary,
 textarea,
 [tabindex]:not([tabindex="-1"]) {
     touch-action: manipulation;
+}
+
+@view-transition {
+    navigation: auto;
 }

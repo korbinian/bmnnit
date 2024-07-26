@@ -22,14 +22,12 @@
 .entry-title {
     font-size: var(--font-size-xxl);
     line-height: var(--line-height-xxl);
-    font-weight: 700;
-    color: var(--color-secondary-dark);
     position: relative;
     width: fit-content;
 }
 @keyframes slidein {
     from {
-        transform: translateY(-1em);
+        transform: translateY(-0.3em);
     }
 
     to {

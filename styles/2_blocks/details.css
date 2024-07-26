@@ -2,23 +2,21 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .wp-block-details {
+    overflow: visible;
     & summary {
         display: flex;
-        /* justify-content: space-between; */
-        gap: var(--m);
+        gap: var(--s);
         user-select: none;
-        font-weight: 500;
         &::after {
             display: block;
             content: "→";
-            font-family: var(--font-stack-inter);
-            font-weight: 600;
+            font-family: var(--font-stack-firava);
             color: var(--color-dark);
             transform: translateX(0);
             transition: transform 0.3s;
         }
         &:hover::after {
-            transform: translateX(0.5rem);
+            transform: translateX(0.25rem);
             transition: transform 0.3s;
         }
     }

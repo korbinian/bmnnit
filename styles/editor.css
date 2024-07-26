@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Firava";
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: block;
+    src: url("../fonts/Firava/Firava.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Firava";
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: block;
+    src: url("../fonts/Firava/FiravaItalic.woff2") format("woff2");
+}
+
+* {
+    font-family: "Firava";
+}

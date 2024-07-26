@@ -46,7 +46,6 @@ h5,
 h6 {
     font-size: inherit;
     line-height: inherit;
-    font-weight: 700;
 }
 
 h1:has(+ h2) {

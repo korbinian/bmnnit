@@ -10,16 +10,4 @@
             grid-column: 5/-2;
         }
     }
-    &.has-primary-background-color {
-        .wp-element-button,
-        .wp-block-button__link {
-            background: var(--color-primary-darker);
-            &:hover {
-                background: var(--color-primary-dark);
-                &::after {
-                    color: var(--color-text-on-primary);
-                }
-            }
-        }
-    }
 }

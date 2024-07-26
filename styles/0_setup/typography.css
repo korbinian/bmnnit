@@ -9,9 +9,6 @@ html {
     font-weight: var(--font-weight-copy);
 }
 
-body {
-}
-
 p,
 h1,
 h2,
@@ -29,6 +26,7 @@ h4,
 h5,
 h6 {
     text-wrap: balance;
+    font-weight: var(--font-weight-headings);
 }
 
 h2 {
@@ -93,4 +91,9 @@ pre {
 
 address {
     font-style: normal;
+}
+
+.section--footer {
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-s);
 }

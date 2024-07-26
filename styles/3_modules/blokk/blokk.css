@@ -1,0 +1,26 @@
+.module--blokk {
+    perspective: 1000px;
+    position: absolute !important;
+    top: 8rem;
+    left: 40rem;
+    overflow: visible;
+}
+.blokk {
+    width: fit-content;
+    height: 55rem;
+    left: 0;
+    overflow: scroll;
+    transform: rotateX(35deg) rotateY(-39deg) rotateZ(-13deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    code[class*="language-"],
+    pre[class*="language-"] {
+        font-family: var(--font-family-code) !important;
+        font-size: 16px;
+        line-height: 10px !important;
+    }
+    * {
+        font: inherit;
+    }
+}

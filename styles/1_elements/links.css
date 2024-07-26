@@ -7,7 +7,7 @@ a {
     text-underline-offset: 0.15em;
     text-decoration-thickness: 0.1em;
     text-decoration-thickness: 2px;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 
 a:link {
@@ -15,10 +15,8 @@ a:link {
 a:visited {
 }
 a:hover {
-    stext-underline-offset: 0.2em;
     text-decoration-color: transparent;
-    transition: all 0.1s;
-    color: var(--color-secondary-dark);
+    transition: all 0.2s;
 }
 a:active {
 }

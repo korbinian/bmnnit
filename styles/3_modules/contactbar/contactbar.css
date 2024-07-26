@@ -5,7 +5,6 @@
 }
 
 .contactbar {
-    font-weight: 100;
     a {
         color: var(--color-primary);
         text-decoration: none;
@@ -14,7 +13,7 @@
         }
     }
     b {
-        font-weight: 900;
+        font-weight: 700;
     }
     address {
         display: flex;

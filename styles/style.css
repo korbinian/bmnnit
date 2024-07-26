@@ -60,9 +60,10 @@
 
 @import "3_modules/services/services.css";
 
-@import "3_modules/cta/cta.css";
+@import "3_modules/cta/cta-button.css";
+@import "3_modules/cta/cta-bar.css";
 
-@import "3_modules/codeblock/codeblock.css";
+@import "3_modules/blokk/blokk.css";
 
 /*/ /////////////////////////////////////////////////////////////////////////////
 //	LAYOUT
@@ -78,25 +79,6 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 @import "5_themes/default.css";
-
-@import "5_themes/categories/1.css";
-@import "5_themes/categories/2.css";
-@import "5_themes/categories/3.css";
-@import "5_themes/categories/4.css";
-@import "5_themes/categories/5.css";
-
-@import "5_themes/colors/red.css";
-@import "5_themes/colors/orange.css";
-@import "5_themes/colors/yellow.css";
-@import "5_themes/colors/lime.css";
-@import "5_themes/colors/green.css";
-@import "5_themes/colors/cyan.css";
-@import "5_themes/colors/teal.css";
-@import "5_themes/colors/blue.css";
-@import "5_themes/colors/indigo.css";
-@import "5_themes/colors/purple.css";
-@import "5_themes/colors/pink.css";
-@import "5_themes/colors/grey.css";
 
 /*//////////////////////////////////////////////////////////////////////////////
 //	UTILITIES
@@ -119,54 +101,3 @@
 /*/ /////////////////////////////////////////////////////////////////////////////
 //	OVERWRITES
 //////////////////////////////////////////////////////////////////////////////*/
-
-.logged-in .section--header {
-    top: 32px;
-}
-.home {
-    .active-on-frontpage {
-        .sub-menu {
-            opacity: 1 !important;
-            pointer-events: all !important;
-        }
-    }
-}
-
-.entry-content > * {
-    z-index: 1;
-    position: relative;
-}
-
-.entry-content {
-    perspective: 1000px;
-}
-
-.blokk {
-    position: absolute !important;
-    z-index: -1;
-    top: -140px;
-    width: fit-content;
-    height: 55rem;
-    left: 47rem;
-    /* aspect-ratio: 16 / 9; */
-
-    overflow: scroll;
-    transform: rotateX(30deg) rotateY(-28deg) rotateZ(-13deg);
-    code[class*="language-"],
-    pre[class*="language-"] {
-        font-family: var(--font-family-code) !important;
-        font-size: 14px;
-        line-height: 10px !important;
-    }
-
-    * {
-        font: inherit;
-    }
-}
-
-.module--cta {
-    grid-column: 3 /-2 !important;
-    > * {
-        grid-column: 3 / -2 !important;
-    }
-}

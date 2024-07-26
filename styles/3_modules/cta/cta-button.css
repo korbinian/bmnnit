@@ -1,0 +1,44 @@
+/*  MODULE: CTA BUTTON
+//////////////////////////////////////////////////////////////////////////////*/
+
+.cta a {
+    display: grid;
+    place-items: center start;
+    grid-template-columns: max-content min-content;
+    gap: var(--s);
+    width: max-content;
+    height: 2rem;
+    padding-inline: var(--m);
+    text-decoration: inherit;
+    color: inherit;
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary);
+
+    font-weight: var(--font-weight-buttons);
+    transition: all 0.3s;
+
+    &:hover {
+        transition: all 0.3s;
+        color: color-mix(in oklab, var(--color-primary), white 90%);
+    }
+    &::after {
+        content: "→";
+
+        transform: translateX(0);
+        transition: all 0.3s;
+    }
+    &:hover::after {
+        transform: translateX(0.25rem) !important;
+
+        font-weight: 700;
+        color: color-mix(in oklab, var(--color-primary), black 90%);
+    }
+    &:active::after {
+        transform: translateX(0.5rem) !important;
+    }
+}
+
+.module--cta {
+    margin-top: auto;
+    border-radius: var(--border-radius);
+}
