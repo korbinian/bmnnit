@@ -51,8 +51,10 @@
 @import "3_modules/widgets/widgets-footer.css";
 
 @import "3_modules/article/article.css";
-@import "3_modules/article/page-title.css";
-@import "3_modules/article/post-navigation.css";
+@import "3_modules/projects/projects.css";
+@import "3_modules/team/team.css";
+
+@import "3_modules/post-navigation/post-navigation.css";
 
 @import "3_modules/contactbar/contactbar.css";
 
@@ -95,8 +97,6 @@
 /*//////////////////////////////////////////////////////////////////////////////
 //	VENDOR
 //////////////////////////////////////////////////////////////////////////////*/
-
-@import "7_vendor/slick.css";
 
 /*/ /////////////////////////////////////////////////////////////////////////////
 //	OVERWRITES

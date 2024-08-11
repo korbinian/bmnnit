@@ -1,9 +1,0 @@
-.blog {
-    .post {
-        margin-bottom: var(--xl);
-    }
-}
-
-.reference-list {
-    row-gap: var(--l);
-}

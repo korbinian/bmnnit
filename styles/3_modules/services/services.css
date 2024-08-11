@@ -48,13 +48,13 @@
                     opacity: 0;
 
                     content: "";
-                    width: 35rem;
-                    height: 35rem;
+                    width: 32rem;
+                    height: 32rem;
                     position: absolute;
                     z-index: -1;
                     top: -5rem;
 
-                    left: -30rem;
+                    left: -28rem;
                     transform: translateY(-7rem);
                     transition: transform 0.3s, opacity 0.3s;
                     pointer-events: none;

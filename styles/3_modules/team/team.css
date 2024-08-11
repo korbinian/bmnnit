@@ -1,0 +1,21 @@
+/*  MODULE: TEAM
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--team {
+    .team {
+        grid-column: 1/-1;
+        gap: var(--s);
+        > * {
+            margin-top: 0;
+            smargin-left: -1rem !important;
+            img {
+                filter: grayscale(1);
+                position: relative;
+                &:hover {
+                    filter: grayscale(0);
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}

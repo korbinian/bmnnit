@@ -76,3 +76,12 @@
         background-color: var(--color-transparent-dark);
     }
 }
+
+.page-title,
+.entry-title {
+    font-size: var(--font-size-xxl);
+    line-height: var(--line-height-xxl);
+    position: relative;
+    swidth: fit-content;
+    padding-block: var(--l) var(--m);
+}

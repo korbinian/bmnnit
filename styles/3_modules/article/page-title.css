@@ -1,8 +1,0 @@
-.page-title,
-.entry-title {
-    font-size: var(--font-size-xxl);
-    line-height: var(--line-height-xxl);
-    position: relative;
-    width: fit-content;
-    padding-block: var(--l) var(--m);
-}

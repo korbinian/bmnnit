@@ -1,3 +1,6 @@
+/*  MODULE: POST NAVIGATION
+//////////////////////////////////////////////////////////////////////////////*/
+
 .post-navigation {
     margin-top: var(--l);
     & .nav-links {

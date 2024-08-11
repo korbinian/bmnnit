@@ -12,13 +12,14 @@
 	<main class="section section--main" id="primary" >
 	
 	<div class="area area--content">
-	<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
-	<?php if ($reference_query->have_posts()) : ?>
-			<div class="reference-list">
+
+		<?php the_title( '<article class="article"><header class="entry-header"><h1 class="page-title">', '</h1></header></article>' ); ?>
+		<div class="projects">
+		<?php if ($reference_query->have_posts()) : ?>
 				<?php while ($reference_query->have_posts()) : $reference_query->the_post(); ?>
 				<?php get_template_part( 'template-parts/content', 'project' ); ?>
 				<?php endwhile; wp_reset_postdata(); ?>
-			</div>
+
 		<?php else : ?>
 			<article class="hentry">
 				<div class="entry-content">
@@ -28,6 +29,8 @@
 			</article>
 			
 		<?php endif; ?>
+		</div>
+
 	</div>
 		
 

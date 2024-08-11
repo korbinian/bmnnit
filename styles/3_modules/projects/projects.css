@@ -1,0 +1,42 @@
+/*  MODULE: PROJECTS
+//////////////////////////////////////////////////////////////////////////////*/
+
+.projects {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.section--main {
+    & .area--content {
+        .projects {
+            display: grid;
+            row-gap: var(--xl);
+            padding-block: var(--l);
+            .project {
+                display: grid;
+                grid-template-columns: subgrid;
+                row-gap: var(--gap);
+                .project-header {
+                    grid-column: 5/-4;
+                    grid-row: 1;
+                    .project-title {
+                        font-size: var(--font-size-xl);
+                        line-height: var(--line-height-xl);
+                    }
+                }
+                .project-thumbnail {
+                    grid-column: 1/5;
+                    grid-row: 2;
+                    display: grid;
+                    place-items: start end;
+                    padding-inline: var(--l);
+                }
+                .project-content {
+                    grid-column: 5/-4;
+                    display: grid;
+                    gap: var(--gap);
+                }
+            }
+        }
+    }
+}
