@@ -92,8 +92,3 @@ pre {
 address {
     font-style: normal;
 }
-
-.section--footer {
-    font-size: var(--font-size-s);
-    line-height: var(--line-height-s);
-}

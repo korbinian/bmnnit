@@ -7,7 +7,6 @@
         gap: var(--s);
         > * {
             margin-top: 0;
-            smargin-left: -1rem !important;
             img {
                 filter: grayscale(1);
                 position: relative;

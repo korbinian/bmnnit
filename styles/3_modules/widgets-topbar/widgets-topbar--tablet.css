@@ -1,18 +1,2 @@
-/*  MODULE: WIDGETS TOPBAR
+/*  MODULE: WIDGETS TOPBAR TABLET
 //////////////////////////////////////////////////////////////////////////////*/
-
-.module--widgets-topbar {
-    font-size: var(--font-size-xs);
-
-    font-weight: 500;
-    font-family: var(--font-family-copy);
-
-    color: #fff;
-}
-.widgets-topbar {
-}
-.widget_block {
-}
-
-.address {
-}

@@ -1,0 +1,32 @@
+/*  MODULE: SERVICES TABLET
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--services {
+    .services {
+        position: static;
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: var(--s);
+            margin-inline: calc(var(--s) * -1);
+            position: relative;
+            a {
+                display: flex;
+                gap: var(--s);
+                user-select: none;
+                padding-inline: var(--s);
+                width: 100%;
+
+                &::after {
+                    display: block;
+                    content: "→";
+                    font-family: var(--font-stack-firava);
+                    color: var(--color-dark);
+                    transform: translateX(0);
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+}

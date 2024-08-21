@@ -42,6 +42,8 @@
 /*	HEADER
 //////////////////////////////////////////////////////////////////////////////*/
 
+/*  FERTIG */
+
 @import "3_modules/branding/branding.css";
 @import "3_modules/branding/branding--mobile.css" (width <= 640px);
 @import "3_modules/branding/branding--tablet.css" (640px <= width <= 1100px);
@@ -62,51 +64,78 @@
 @import "3_modules/widgets-topright/widgets-topright--tablet.css" (640px <= width <= 1100px);
 @import "3_modules/widgets-topright/widgets-topright--desktop.css" (width >= 1100px);
 
+@import "3_modules/searchbar/searchbar.css";
+@import "3_modules/searchbar/searchbar--mobile.css" (width <= 640px);
+@import "3_modules/searchbar/searchbar--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/searchbar/searchbar--desktop.css" (width >= 1100px);
+
 /*	MAIN
 //////////////////////////////////////////////////////////////////////////////*/
 
 @import "3_modules/nav-sidebar/nav-sidebar.css";
 @import "3_modules/nav-sidebar/nav-sidebar--mobile.css" (width <= 640px);
+@import "3_modules/nav-sidebar/nav-sidebar--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/nav-sidebar/nav-sidebar--desktop.css" (width >= 1100px);
 
 @import "3_modules/nav-footer/nav-footer.css";
 @import "3_modules/nav-footer/nav-footer--mobile.css" (width <= 640px);
 @import "3_modules/nav-footer/nav-footer--tablet.css" (640px <= width <= 1100px);
 @import "3_modules/nav-footer/nav-footer--desktop.css" (width >= 1100px);
 
-@import "3_modules/widgets/widgets.css";
-
 @import "3_modules/article/article.css";
 @import "3_modules/article/article--mobile.css" (width <= 640px);
-@import "3_modules/projects/projects.css";
-@import "3_modules/team/team.css";
+@import "3_modules/article/article--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/article/article--desktop.css" (width >= 1100px);
 
 @import "3_modules/post-navigation/post-navigation.css";
+@import "3_modules/post-navigation/post-navigation--mobile.css" (width <= 640px);
+@import "3_modules/post-navigation/post-navigation--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/post-navigation/post-navigation--desktop.css" (width >= 1100px);
 
 @import "3_modules/contactbar/contactbar.css";
 @import "3_modules/contactbar/contactbar--mobile.css" (width <= 640px);
-
-@import "3_modules/search/searchbar.css";
-
-@import "3_modules/services/services.css";
+@import "3_modules/contactbar/contactbar--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/contactbar/contactbar--desktop.css" (width >= 1100px);
 
 @import "3_modules/cta/cta.css";
 @import "3_modules/cta/cta--mobile.css" (width <= 640px);
 @import "3_modules/cta/cta--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/cta/cta--desktop.css" (width >= 1100px);
+
+@import "3_modules/services/services.css";
+@import "3_modules/services/services--mobile.css" (width <= 640px);
+@import "3_modules/services/services--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/services/services--desktop.css" (width >= 1100px);
 
 @import "3_modules/blokk/blokk.css";
 @import "3_modules/blokk/blokk--mobile.css" (width <= 640px);
+@import "3_modules/blokk/blokk--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/blokk/blokk--desktop.css" (width >= 1100px);
+
+/*  TO DO */
+
+@import "3_modules/projects/projects.css";
+@import "3_modules/projects/projects--mobile.css" (width <= 640px);
+@import "3_modules/projects/projects--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/projects/projects--desktop.css" (width >= 1100px);
+
+@import "3_modules/team/team.css";
+@import "3_modules/team/team--mobile.css" (width <= 640px);
+@import "3_modules/team/team--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/team/team--desktop.css" (width >= 1100px);
 
 /*	FOOTER
 //////////////////////////////////////////////////////////////////////////////*/
 
 @import "3_modules/widgets-footer/widgets-footer.css";
 @import "3_modules/widgets-footer/widgets-footer--mobile.css" (width <= 640px);
+@import "3_modules/widgets-footer/widgets-footer--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/widgets-footer/widgets-footer--desktop.css" (width >= 1100px);
 
 /*/ /////////////////////////////////////////////////////////////////////////////
 //	LAYOUT
 //////////////////////////////////////////////////////////////////////////////*/
 
-@import "4_layout/layout.css";
 @import "4_layout/layout--mobile.css" (width <= 640px);
 @import "4_layout/layout--tablet.css" (640px <= width <= 1100px);
 @import "4_layout/layout--desktop.css" (width >= 1100px);
@@ -118,6 +147,7 @@
 @import "5_themes/default.css";
 @import "5_themes/default--mobile.css" (width <= 640px);
 @import "5_themes/default--tablet.css" (640px <= width <= 1100px);
+@import "5_themes/default--desktop.css" (width >= 1100px);
 
 /*/ /////////////////////////////////////////////////////////////////////////////
 //	UTILITIES

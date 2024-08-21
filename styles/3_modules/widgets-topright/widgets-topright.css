@@ -11,8 +11,6 @@
     justify-content: end;
     gap: var(--m);
 }
-.widget_block {
-}
 
 .github {
     font-size: 0;

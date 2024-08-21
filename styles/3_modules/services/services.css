@@ -1,19 +1,13 @@
 /*  MODULE: SERVICES
 //////////////////////////////////////////////////////////////////////////////*/
-
 .module--services {
-    grid-column: 5 /-2 !important;
-    position: relative;
     .services {
-        grid-column: span 6;
-        width: 100%;
         position: static;
         ul {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             gap: var(--s);
-
             margin-inline: calc(var(--s) * -1);
             position: relative;
             a {
@@ -22,10 +16,6 @@
                 user-select: none;
                 padding-inline: var(--s);
                 width: 100%;
-                &:hover {
-                    background: var(--color-primary);
-                    transition: all 0.3s;
-                }
                 &::after {
                     display: block;
                     content: "→";
@@ -34,104 +24,7 @@
                     transform: translateX(0);
                     transition: all 0.3s;
                 }
-                &:hover::after {
-                    transform: translateX(0.25rem);
-                    transition: all 0.3s;
-                    font-weight: 700;
-                    color: var(--color-primary-dark);
-                }
-            }
-            li {
-                position: static;
-                &::after {
-                    opacity: 0;
-
-                    content: "";
-                    width: 32rem;
-                    height: 32rem;
-                    position: absolute;
-                    z-index: -1;
-                    top: -5rem;
-
-                    left: -28rem;
-                    transform: translateY(-7rem);
-                    transition: transform 0.3s, opacity 0.3s;
-                    pointer-events: none;
-                    background-size: 100%;
-                }
-                &:hover::after {
-                    opacity: 1;
-                    transform: translateY(-6rem) translateX(-0.5rem);
-                    transition: transform 0.3s, opacity 0.3s;
-                    filter: hue-rotate(90deg);
-                }
-            }
-            li:nth-of-type(1)::after {
-                background-image: url("../../../images/services/1.png");
-            }
-            li:nth-of-type(2)::after {
-                background-image: url("../../../images/services/2.png");
-            }
-            li:nth-of-type(3)::after {
-                background-image: url("../../../images/services/3.png");
-            }
-            li:nth-of-type(4)::after {
-                background-image: url("../../../images/services/4.png");
-            }
-            li:nth-of-type(5)::after {
-                background-image: url("../../../images/services/5.png");
-            }
-            li:nth-of-type(6)::after {
-                background-image: url("../../../images/services/6.png");
-            }
-            li:nth-of-type(7)::after {
-                background-image: url("../../../images/services/7.png");
             }
         }
     }
 }
-/* 
-.module--services .service::after {
-    
-}
-.module--services .service::after {
-    content: "";
-    background-repeat: no-repeat;
-    background-size: 20rem;
-    background-position: top right;
-    mix-blend-mode: multiply;
-}
-
-.module--services .service--1::after {
-    background-image: url("../../../images/services/1.png");
-}
-.module--services .service--2::after {
-    background-image: url("../../../images/services/2.png");
-}
-.module--services .service--3::after {
-    background-image: url("../../../images/services/3.png");
-}
-.module--services .service--4::after {
-    background-image: url("../../../images/services/4.png");
-}
-.module--services .service--5::after {
-    background-image: url("../../../images/services/5.png");
-}
-.module--services .service--6::after {
-    background-image: url("../../../images/services/6.png");
-}
-.module--services .service--7::after {
-    background-image: url("../../../images/services/7.png");
-}
-
-.module--services:has(.service--1:hover) .service--1::after,
-.module--services:has(.service--2:hover) .service--2::after,
-.module--services:has(.service--3:hover) .service--3::after,
-.module--services:has(.service--4:hover) .service--4::after,
-.module--services:has(.service--5:hover) .service--5::after,
-.module--services:has(.service--6:hover) .service--6::after,
-.module--services:has(.service--7:hover) .service--7::after {
-    opacity: 1;
-    transform: translateY(-6rem);
-    transition: transform 0.3s, opacity 0.3s;
-} */

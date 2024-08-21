@@ -126,6 +126,13 @@ body {
     .module--branding {
         background-color: var(--color-blue-900);
     }
+    .module--widgets-topbar {
+        font-size: var(--font-size-xs);
+        line-height: 2rem;
+        font-weight: 500;
+        font-family: var(--font-family-copy);
+        color: var(--color-white);
+    }
 }
 
 /*  MAIN /////////////////////////////////////////////////////////////////////*/

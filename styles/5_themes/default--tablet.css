@@ -1,7 +1,11 @@
+/* THEME: DEFAULT TABLET
+//////////////////////////////////////////////////////////////////////////////*/
+
 .section--header {
     .module--nav-main {
         background-color: var(--color-white);
     }
+
     .module--widgets-topright {
         background-color: var(--color-white);
     }

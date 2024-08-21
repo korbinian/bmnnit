@@ -1,18 +1,2 @@
-/*  MODULE: WIDGETS TOPBAR
+/*  MODULE: WIDGETS TOPBAR DESKTOP
 //////////////////////////////////////////////////////////////////////////////*/
-
-.module--widgets-topbar {
-    font-size: var(--font-size-xs);
-    line-height: 2rem;
-    font-weight: 500;
-    font-family: var(--font-family-copy);
-
-    color: #fff;
-}
-.widgets-topbar {
-}
-.widget_block {
-}
-
-.address {
-}

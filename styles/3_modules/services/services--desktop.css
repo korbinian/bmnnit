@@ -1,0 +1,61 @@
+/*  MODULE: SERVICES DESKTOP
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--services {
+    .services {
+        ul {
+            a {
+                &:hover::after {
+                    transform: translateX(0.25rem);
+                    transition: all 0.3s;
+                    font-weight: 700;
+                    color: var(--color-primary-dark);
+                }
+            }
+            li {
+                position: static;
+                &::after {
+                    opacity: 0;
+                    content: "";
+                    width: 32rem;
+                    height: 32rem;
+                    position: absolute;
+                    z-index: -1;
+                    top: -5rem;
+                    left: -28rem;
+                    transform: translateY(-7rem);
+                    transition: transform 0.3s, opacity 0.3s;
+                    pointer-events: none;
+                    background-size: 100%;
+                }
+                &:hover::after {
+                    opacity: 1;
+                    transform: translateY(-6rem) translateX(-0.5rem);
+                    transition: transform 0.3s, opacity 0.3s;
+                    filter: hue-rotate(90deg);
+                }
+            }
+            li:nth-of-type(1)::after {
+                background-image: url("../../../images/services/1.avif");
+            }
+            li:nth-of-type(2)::after {
+                background-image: url("../../../images/services/2.avif");
+            }
+            li:nth-of-type(3)::after {
+                background-image: url("../../../images/services/3.avif");
+            }
+            li:nth-of-type(4)::after {
+                background-image: url("../../../images/services/4.avif");
+            }
+            li:nth-of-type(5)::after {
+                background-image: url("../../../images/services/5.avif");
+            }
+            li:nth-of-type(6)::after {
+                background-image: url("../../../images/services/6.avif");
+            }
+            li:nth-of-type(7)::after {
+                background-image: url("../../../images/services/7.avif");
+            }
+        }
+    }
+}

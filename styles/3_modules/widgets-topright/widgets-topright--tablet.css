@@ -1,27 +1,2 @@
-/*  MODULE: WIDGETS TOP RIGHT
+/*  MODULE: WIDGETS TOP RIGHT TABLET
 //////////////////////////////////////////////////////////////////////////////*/
-
-.module--widgets-topright {
-    display: grid;
-    place-items: center end;
-}
-.widgets-topright {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    gap: var(--m);
-}
-.widget_block {
-}
-
-.github {
-    font-size: 0;
-    line-height: 0;
-    width: 2rem;
-    height: 2rem;
-    display: block;
-    background-image: url("../../../images/icons/icon--github-dark.svg");
-    background-size: 1.5rem;
-    background-repeat: no-repeat;
-    background-position: center;
-}

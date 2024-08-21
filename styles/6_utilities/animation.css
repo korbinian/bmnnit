@@ -10,3 +10,13 @@
         opacity: 1;
     }
 }
+
+@keyframes slidein {
+    from {
+        transform: translateY(-0.3em);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

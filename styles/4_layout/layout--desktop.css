@@ -117,6 +117,13 @@ body {
                 grid-column: 5 /-4;
             }
         }
+        .module--services {
+            grid-column: 5 /-2 !important;
+            position: relative;
+            .services {
+                grid-column: span 6;
+            }
+        }
     }
     .area--sidebar {
         grid-column: 1 /-1;

@@ -1,13 +1,2 @@
-/*  MODULE: WIDGETS TOPBAR
+/*  MODULE: WIDGETS TOPBAR MOBILE
 //////////////////////////////////////////////////////////////////////////////*/
-
-.module--widgets-topbar {
-    padding: var(--m);
-}
-.widgets-topbar {
-}
-.widget_block {
-}
-
-.address {
-}
