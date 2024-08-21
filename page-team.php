@@ -3,7 +3,7 @@
 <?php
 	// Define the initial query arguments for category 'xxx'
 	$query_args = array(
-		'post_type'      => 'project',
+		'post_type'      => 'team',
 		'posts_per_page' => 10
 	);
 
@@ -19,10 +19,10 @@
 				</header>
 			</article>
 
-			<div class="articles projects">
+			<div class="articles team-members">
 				<?php if ($reference_query->have_posts()) : ?>
 					<?php while ($reference_query->have_posts()) : $reference_query->the_post(); ?>
-					<?php get_template_part( 'template-parts/content', 'project' ); ?>
+					<?php get_template_part( 'template-parts/content', 'team' ); ?>
 					<?php endwhile; wp_reset_postdata(); ?>
 				<?php endif; ?>
 			</div>

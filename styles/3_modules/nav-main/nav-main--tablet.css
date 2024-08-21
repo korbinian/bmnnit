@@ -1,0 +1,63 @@
+/*  MODULE: NAV MAIN
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--nav-main {
+    font-family: var(--font-family-nav);
+    font-size: var(--font-size-l);
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-main__toggle {
+    display: none;
+}
+.nav-main {
+    display: block !important;
+    text-align: right;
+    a {
+        text-decoration: none;
+        padding-inline: var(--s);
+    }
+    .current-menu-item {
+        border-radius: var(--border-radius);
+        background: var(--color-primary);
+        color: color-mix(in oklab, var(--color-primary), black 90%);
+    }
+    .menu {
+        display: flex;
+        gap: var(--xs);
+        & .menu-item-has-children > a {
+            display: grid;
+            place-items: center start;
+            width: max-content;
+            grid-template-columns: 1fr min-content;
+            gap: var(--xs);
+        }
+        & .menu-item-has-children > a::after {
+            content: "↓";
+            display: block;
+            transform: rotate(-45deg);
+        }
+    }
+
+    .sub-menu {
+        position: absolute;
+        left: var(--l);
+        gap: var(--gap);
+        margin-top: var(--s);
+        font-weight: 300;
+        display: none;
+    }
+
+    .current-menu-item,
+    .current-menu-ancestor {
+        .sub-menu {
+            display: flex;
+        }
+    }
+}
+
+.home .active-on-frontpage {
+    .sub-menu {
+        display: flex;
+    }
+}

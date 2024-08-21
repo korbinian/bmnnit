@@ -1,0 +1,8 @@
+/*  MODULE: BRANDING
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--branding {
+    .branding {
+        place-items: start;
+    }
+}

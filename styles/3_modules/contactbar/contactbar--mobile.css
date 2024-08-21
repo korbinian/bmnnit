@@ -1,0 +1,11 @@
+/*  MODULE: CONTACTBAR
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--contactbar {
+}
+
+.contactbar {
+    address {
+        flex-direction: column;
+    }
+}

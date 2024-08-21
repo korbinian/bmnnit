@@ -1,0 +1,14 @@
+.module--nav-sidebar .menu {
+    .current-menu-item,
+    .current-menu-ancestor {
+        gap: var(--s);
+    }
+    .sub-menu {
+        row-gap: var(--xs);
+    }
+    a {
+        &:hover {
+            transform: translateY(0);
+        }
+    }
+}

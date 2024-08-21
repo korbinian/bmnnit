@@ -1,0 +1,11 @@
+/*  MODULE: NAV FOOTER
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--nav-footer {
+}
+
+.nav-footer {
+    .menu {
+        justify-content: start;
+    }
+}

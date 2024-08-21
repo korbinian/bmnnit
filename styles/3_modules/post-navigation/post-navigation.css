@@ -2,7 +2,6 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .post-navigation {
-    margin-top: var(--l);
     & .nav-links {
         grid-column: 5 /-5;
         display: flex;

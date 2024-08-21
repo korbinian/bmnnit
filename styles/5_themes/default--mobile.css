@@ -1,0 +1,17 @@
+.module--nav-main {
+    background: var(--color-blue-900);
+}
+
+.nav-main {
+    background-color: var(--color-white);
+}
+
+.section--header {
+    .module--widgets-topright {
+        background-color: var(--color-white);
+    }
+}
+
+.section--main {
+    background-color: var(--color-white);
+}

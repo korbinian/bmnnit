@@ -1,0 +1,13 @@
+/*  MODULE: WIDGETS TOPBAR
+//////////////////////////////////////////////////////////////////////////////*/
+
+.module--widgets-topbar {
+    padding: var(--m);
+}
+.widgets-topbar {
+}
+.widget_block {
+}
+
+.address {
+}

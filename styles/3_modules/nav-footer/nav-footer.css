@@ -1,6 +1,9 @@
 /*  MODULE: NAV FOOTER
 //////////////////////////////////////////////////////////////////////////////*/
 
+.module--nav-footer {
+}
+
 .nav-footer {
     margin-left: calc(var(--s) * -1);
     a {

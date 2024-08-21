@@ -1,0 +1,12 @@
+.section--header {
+    .module--nav-main {
+        background-color: var(--color-white);
+    }
+    .module--widgets-topright {
+        background-color: var(--color-white);
+    }
+}
+
+.section--main {
+    background-color: var(--color-white);
+}

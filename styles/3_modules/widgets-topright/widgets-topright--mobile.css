@@ -1,0 +1,15 @@
+/*  MODULE: WIDGETS TOP RIGHT
+//////////////////////////////////////////////////////////////////////////////*/
+
+.widgets-topright {
+    width: 100%;
+    justify-content: space-between;
+    *:has(.cta) {
+    }
+    *:has(.github) {
+        sorder: 2;
+    }
+    > *:last-child {
+        margin-left: auto;
+    }
+}

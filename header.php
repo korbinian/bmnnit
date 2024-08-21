@@ -49,7 +49,12 @@
 		</div>
     	<?php } ?>
 		<div class="module module--nav-main">
-			<button class="nav-main__toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'cavok' ); ?></button>
+			<button class="nav-main__toggle nav-hamburger__toggle hamburger" aria-controls="primary-menu" aria-expanded="false">
+				<span class="toggle__text hamburger__text"><?php esc_html_e( 'Menü', 'bmnnit' ); ?></span>
+				<span class="toggle__box hamburger__box"><span class="toggle__inner hamburger__inner"></span></span>
+			</button>
+
+</button>
 			<nav class="nav-main" hidden>
 				<?php wp_nav_menu(
 					array(

@@ -5,50 +5,63 @@
 	$project_mitarbeiter = get_field('project_mitarbeiter',  $id); 
 ?>
 
-
 <article id="post-<?php the_ID(); ?>" <?php post_class($css_class = 'article article--project'); ?>>
-	<header class="project-header">
-		<?php the_title( '<h2 class="project-title">', '</h1>' ); ?>
+
+	<header class="article__header project__header ">
+		<?php the_title( '<h2 class="project-title">', '</h2>' ); ?>
+		<?php if (!empty($project_url)): ?>
+			<div class="project__url">
+				<a href="<?= $project_url ?>"><?= $project_url ?></a>
+			</div>
+			<?php endif; ?>
 	</header>
 
-	<div class="project-thumbnail">
+	<div class="article__thumbnail project__thumbnail">
 		<?php the_post_thumbnail(); ?>	
 	</div>
 
-	<div class="project-content">
+	<div class="article__body project__body">
 
-		<h2>Projekt Eckdaten:</h2>
-		
-		<ul>
+		<div class="project__info">
+			<!-- 
+			<h3>Eckdaten:</h3>
 			<?php if (!empty($project_url)): ?>
-				<li>Projekt Homepage: <a href="<?= $project_url ?>"><?= $project_url ?></a></li>
+			<div class="project__url">
+				<h4>Homepage:</h4> <a href="<?= $project_url ?>"><?= $project_url ?></a>
+			</div>
+
 			<?php endif; ?>
+			
 			<?php if (!empty($project_arbeitstage)): ?>
-				<li>Projekt Dauer: <?= $project_arbeitstage ?> Tage</li>
+				<div class="project__dauer">
+					<h3>Umfang:</h3> <span><?= $project_arbeitstage ?> Tage</span>
+				</div>
 			<?php endif; ?>
+			<div class="project__mitarbeiter">
 			<?php if (!empty($project_mitarbeiter)): ?>
-				<li>Projekt Mitarbeiter: <?= $project_mitarbeiter ?> Personen</li>
-			<?php endif; ?>
-		</ul>
+				<h4>Mitarbeiter:</h4> <span><?= $project_mitarbeiter ?> Personen</li></span>
+			<?php endif; ?> -->
 
-		<h2>Projektbeschreibung:</h2>
-		
-		<?php
-		the_content();
+		</div>
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bmnnit' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+		<div class="project__content">
+			<h3>Projektbeschreibung:</h3>
+			<?php the_content(); ?>
+		</div>
+
+		<footer class="article__footer project__footer">
+			<?php 
+				wp_link_pages(
+					array(
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bmnnit' ),
+						'after'  => '</div>',
+					)
+				); 
+			?>
+		</footer>
+
 	</div>
 
-
-
-
-	
 </article>
 
 

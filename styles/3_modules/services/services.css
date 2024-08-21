@@ -2,7 +2,6 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .module--services {
-    margin-bottom: var(--xl);
     grid-column: 5 /-2 !important;
     position: relative;
     .services {
