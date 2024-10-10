@@ -97,6 +97,11 @@
 @import "3_modules/contactbar/contactbar--tablet.css" (640px <= width <= 1100px);
 @import "3_modules/contactbar/contactbar--desktop.css" (width >= 1100px);
 
+@import "3_modules/contactbar/contactform.css";
+@import "3_modules/contactbar/contactform--mobile.css" (width <= 640px);
+@import "3_modules/contactbar/contactform--tablet.css" (640px <= width <= 1100px);
+@import "3_modules/contactbar/contactform--desktop.css" (width >= 1100px);
+
 @import "3_modules/cta/cta.css";
 @import "3_modules/cta/cta--mobile.css" (width <= 640px);
 @import "3_modules/cta/cta--tablet.css" (640px <= width <= 1100px);
