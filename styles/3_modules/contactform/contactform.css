@@ -2,5 +2,86 @@
 //////////////////////////////////////////////////////////////////////////////*/
 
 .hf-form-296 {
-    background: red;
+    sbackground-color: var(--color-white);
+    outline: none;
+}
+
+.hf-fields-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s);
+    .field {
+        display: grid;
+        grid-template-columns: 15rem 1fr;
+        gap: var(--l);
+        label {
+            padding-block: var(--s);
+            font-family: var(--font-stack-fira-sans-condensed);
+            font-weight: 500;
+
+            place-self: start stretch;
+            text-align: right;
+        }
+
+        input {
+            place-self: start stretch;
+        }
+    }
+    .field--message {
+    }
+    .field--callback {
+    }
+    .field--checkbox {
+        sgrid-template-columns: min-content 1fr;
+        input {
+            place-self: end start;
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+        label {
+            font-weight: inherit;
+            text-align: left;
+        }
+    }
+    .field--submit {
+        margin-top: var(--l);
+        input {
+            grid-column: 2;
+        }
+    }
+    input[type="checkbox"] {
+        accent-color: var(--color-primary);
+        place-self: start end;
+        margin-top: 0.9rem;
+    }
+    input[type="submit"] {
+        display: grid;
+        place-items: center start;
+        grid-template-columns: max-content min-content;
+        gap: var(--s);
+
+        height: 2rem;
+        line-height: 1;
+        padding-inline: var(--m);
+        text-decoration: inherit;
+        color: inherit;
+        border-radius: var(--border-radius);
+        background-color: var(--color-primary);
+        font-weight: var(--font-weight-buttons);
+        transition: all 0.3s;
+        border: none;
+        place-self: start start;
+        cursor: pointer;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        border: var(--border);
+    }
+    textarea {
+        min-height: 10rem;
+    }
 }

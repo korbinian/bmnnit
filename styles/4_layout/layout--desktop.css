@@ -101,6 +101,9 @@ body {
                         grid-column: 2 / -2 !important;
                     }
                 }
+                > .hf-form-296 {
+                    grid-column: 4 / -2;
+                }
             }
             .article__footer {
                 grid-column: 5 / -2;

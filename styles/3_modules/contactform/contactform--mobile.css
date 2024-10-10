@@ -1,2 +1,23 @@
 /*  MODULE: CONTACTFORM MOBILE
 //////////////////////////////////////////////////////////////////////////////*/
+.hf-fields-wrap {
+    .field {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 0;
+        label {
+            text-align: left;
+        }
+    }
+    .field--checkbox {
+        display: block;
+    }
+    input[type="checkbox"] {
+        place-self: start;
+    }
+    .field--submit {
+        input {
+            grid-column: 1;
+        }
+    }
+}
